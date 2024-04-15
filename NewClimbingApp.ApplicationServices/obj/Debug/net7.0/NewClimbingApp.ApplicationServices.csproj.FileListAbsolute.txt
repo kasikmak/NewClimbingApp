@@ -1,0 +1,15 @@
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\bin\Debug\net7.0\NewClimbingApp.ApplicationServices.deps.json
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\bin\Debug\net7.0\NewClimbingApp.ApplicationServices.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\bin\Debug\net7.0\NewClimbingApp.ApplicationServices.pdb
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\bin\Debug\net7.0\NewClimbingApp.DataAccess.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\bin\Debug\net7.0\NewClimbingApp.DataAccess.pdb
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.AssemblyInfo.cs
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.csproj.CopyComplete
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\refint\NewClimbingApp.ApplicationServices.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.pdb
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\ref\NewClimbingApp.ApplicationServices.dll

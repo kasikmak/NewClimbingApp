@@ -1,0 +1,14 @@
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\bin\Debug\net7.0\NewClimbingApp.DataAccess.deps.json
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\bin\Debug\net7.0\NewClimbingApp.DataAccess.runtimeconfig.json
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\bin\Debug\net7.0\NewClimbingApp.DataAccess.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\bin\Debug\net7.0\NewClimbingApp.DataAccess.pdb
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.csproj.AssemblyReference.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.AssemblyInfo.cs
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\refint\NewClimbingApp.DataAccess.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.pdb
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.genruntimeconfig.cache
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\ref\NewClimbingApp.DataAccess.dll
