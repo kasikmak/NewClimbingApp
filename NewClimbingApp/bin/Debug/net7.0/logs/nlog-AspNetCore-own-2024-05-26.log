@@ -1,0 +1,15 @@
+2024-05-26 00:24:07.3827|0|DEBUG|Program|init main |url: |action: 
+2024-05-26 00:25:15.3886|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-26 00:25:15.5359|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-26 00:25:15.5359|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-26 00:25:19.6807|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-26 00:25:35.3139|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-26 00:50:41.2525|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users|action: GetUsers
+2024-05-26 00:50:41.5470|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: GetUsers
+2024-05-26 00:50:58.1981|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. |url: https://localhost/Users|action: GetUsers
+2024-05-26 00:56:26.3923|0|DEBUG|Program|init main |url: |action: 
+2024-05-26 00:56:49.4457|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-26 00:56:49.4457|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-26 00:56:49.4457|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-26 00:56:54.3686|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-26 00:56:57.6698|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 

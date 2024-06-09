@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using NewClimbingApp.ApplicationServices.API.Domain.Components;
 using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 using NewClimbingApp.ApplicationServices.API.Domain.Models;
 using NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes;
@@ -44,8 +45,9 @@ public class UpdateRouteHandler : IRequestHandler<UpdateRouteRequest, UpdateRout
         var routeToUpdate = mapper.Map<Route>(request);
         var command = new UpdateRouteCommand
         {
-            Parameter = routeToUpdate,
-            Grade = routeToUpdate.Grade.ToLower()
+            Grade = routeToUpdate.Grade.ToUpper(),
+            GradeAsFloat = routeToUpdate.Grade.ToUpper().ConvertGrades(),
+            Parameter = routeToUpdate,           
         };
         var updatedRoute = await commandExecutor.Execute(command);
         var response = new UpdateRouteResponse

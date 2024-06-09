@@ -56,13 +56,11 @@ public class AddRouteToCragHandler : IRequestHandler<AddRouteToCragRequest, AddR
             };
         }
         cragToUpdate.Routes.Add(routeToAdd);
-
         var command = new AddRouteToCragCommand
         {
             Parameter = cragToUpdate
         };
         var updatedCrag = await commandExecutor.Execute(command);
-
         var response = new AddRouteToCragResponse()
         {
             Data = mapper.Map<CragDto>(updatedCrag)

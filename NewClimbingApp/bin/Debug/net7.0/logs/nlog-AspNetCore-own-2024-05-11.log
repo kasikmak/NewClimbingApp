@@ -1,0 +1,40 @@
+2024-05-11 14:14:28.8249|0|DEBUG|Program|init main |url: |action: 
+2024-05-11 14:14:48.4444|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-11 14:14:48.5444|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-11 14:14:48.5444|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-11 14:14:54.4631|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-11 14:15:02.9668|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-11 14:15:55.3472|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-11 14:15:56.9100|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-11 14:19:22.8733|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:19:23.5902|12|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was challenged. |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:30:39.0617|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:30:39.0617|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/1/climbers/1'|action: AddUserToRoute
+2024-05-11 14:30:39.2294|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:30:39.2294|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/1/climbers/1'|action: AddUserToRoute
+2024-05-11 14:37:54.7541|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at NewClimbingApp.ApplicationServices.API.Handlers.Routes.AddUserToRouteHandler.Handle(AddUserToRouteRequest request, CancellationToken cancellationToken) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\API\Handlers\Routes\AddUserToRouteHandler.cs:line 57
+   at NewClimbingApp.Controllers.ApiControllerBase.HandleRequest[TRequest,TResponse](TRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)|url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:38:24.8484|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 14:38:24.8721|12|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was challenged. |url: https://localhost/Routes/1/climbers/1|action: AddUserToRoute
+2024-05-11 15:36:06.9444|0|DEBUG|Program|init main |url: |action: 
+2024-05-11 15:36:25.7607|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-11 15:36:25.9723|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-11 15:36:25.9723|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-11 15:36:31.2234|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-11 15:36:36.0659|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 

@@ -25,14 +25,19 @@ public class GetRoutesQuery : QueryBase<List<Route>>
         if (!string.IsNullOrEmpty(this.Grade))
         {
             return await context.Routes
-                .Where(x => x.Grade == this.Grade)
+                .Where(x => x.Grade.ToUpper() == this.Grade.ToUpper())
                 .OrderByDescending(x => x.Name)
+                .ThenBy(x => x.Ascents.Select(x => x.Rating).Average())
                 .ToListAsync();
         }
-        
-        return await context.Routes            
+
+        return await context.Routes          
+            .Include(x => x.Climbers)
+            .Include(x => x.Ascents)
             .OrderBy(x => x.GradeAsFloat)
-            .Include(x => x.Ascent)          
+            .ThenBy(x => x.Ascents.Select(x => x.Rating).Average())
+            .ThenBy(x => x.Name)
+            .AsNoTracking()
             .ToListAsync();                   
     }
 }

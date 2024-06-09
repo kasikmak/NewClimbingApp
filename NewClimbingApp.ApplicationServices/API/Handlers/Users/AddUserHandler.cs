@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using MediatR;
-using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 using NewClimbingApp.ApplicationServices.API.Domain.Models;
 using NewClimbingApp.ApplicationServices.API.Domain.Requests.Users;
 using NewClimbingApp.ApplicationServices.API.Domain.Responses.Users;
@@ -14,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
-
+using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 
 namespace NewClimbingApp.ApplicationServices.API.Handlers.Users;
 
@@ -35,9 +34,7 @@ public class AddUserHandler : IRequestHandler<AddUserRequest, AddUserResponse>
     public async Task<AddUserResponse> Handle(AddUserRequest request, CancellationToken cancellationToken)
     {
         var query = new GetUserQuery()
-        {
-           // FirstName = request.FirstName,
-          //  LastName = request.LastName,
+        {         
             Email = request.Email,            
             UserName = request.UserName
         };
@@ -51,7 +48,6 @@ public class AddUserHandler : IRequestHandler<AddUserRequest, AddUserResponse>
             };
         }
         var hashedPassword = passwordHasher.HashPassword(request.Password);
-        //  var hashedPassword = passwordHasher.HashPassword(user, request.Password);
         request.Password = hashedPassword;
 
         var mappedUser = this.mapper.Map<User>(request);

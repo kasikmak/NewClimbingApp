@@ -1,0 +1,59 @@
+2024-04-21 14:28:53.0268|0|DEBUG|Program|init main |url: |action: 
+2024-04-21 14:30:54.1038|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-21 14:30:54.3810|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-21 14:30:54.3810|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-04-21 14:30:58.5778|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-04-21 14:31:02.4755|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-04-21 14:46:39.3625|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-04-21 14:46:52.8449|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-04-21 14:46:55.1110|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-04-21 14:49:14.7797|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-04-21 15:28:59.9729|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users/me|action: GetUserMe
+2024-04-21 15:29:00.8104|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users/me|action: GetUserMe
+2024-04-21 15:31:49.5981|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-04-21 15:31:49.6110|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-04-21 15:40:53.7002|0|DEBUG|Program|init main |url: |action: 
+2024-04-21 15:41:06.0831|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-21 15:41:06.2457|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-21 15:41:06.2457|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-04-21 15:41:08.8946|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-04-21 15:41:15.7265|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-04-21 16:14:45.9430|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-04-21 16:15:05.8648|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-04-21 16:15:10.4761|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-04-21 16:15:13.5488|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/crags|action: 
+2024-04-21 16:15:14.9783|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:15:18.9449|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:26:28.2321|0|DEBUG|Program|init main |url: |action: 
+2024-04-21 16:27:13.8940|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-21 16:27:13.9994|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-21 16:27:13.9994|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-04-21 16:27:18.1404|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-04-21 16:27:22.0471|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-04-21 16:32:45.6785|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-04-21 16:34:21.7100|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:34:21.7204|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/crags|action: 
+2024-04-21 16:37:09.3914|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/crags|action: 
+2024-04-21 16:38:40.3834|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-04-21 16:38:40.4265|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:39:09.5375|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:39:12.0958|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 16:40:08.8360|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/crags|action: 
+2024-04-21 16:40:34.3779|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-04-21 16:40:42.4090|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-04-21 17:00:41.5748|0|DEBUG|Program|init main |url: |action: 
+2024-04-21 17:01:06.7385|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-21 17:01:06.8901|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-21 17:01:06.8901|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-04-21 17:01:22.7481|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-04-21 17:01:50.2471|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-04-21 17:03:19.0037|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users|action: 
+2024-04-21 17:03:25.2382|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-04-21 17:03:26.5472|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/crags|action: 
+2024-04-21 17:03:28.0577|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-04-21 17:18:57.0374|0|DEBUG|Program|init main |url: |action: 
+2024-04-21 17:20:04.9950|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-04-21 17:20:05.4794|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-04-21 17:20:05.4794|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-04-21 17:20:28.5412|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-04-21 17:20:37.7928|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 

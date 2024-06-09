@@ -24,6 +24,6 @@ public class Ascent : EntityBase
     }
 
     public AscentStyle Style { get; set; }
-    public List<Route>? Routes { get; set; }
-    public List<User>? Climbers { get; set; }
+    public int ClimberId { get; set; }
+    public int RouteId { get; set; }
 }

@@ -19,21 +19,23 @@ public class RoutesProfile : Profile
         .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
         .ForMember(x => x.Length, y => y.MapFrom(z => z.Length))
         .ForMember(x => x.Grade, y => y.MapFrom(z => z.Grade))
-        .ForMember(x => x.AscentId, y => y.MapFrom(z => z.AscentId))
-        .ForMember(x => x.GradeAsFloat, y => y.MapFrom(z => z.GradeAsFloat));
-            
-        this.CreateMap<AddRouteRequest, Route>()
-        //.ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
-        .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
-        .ForMember(x => x.Length, y => y.MapFrom(z => z.Length))
-        .ForMember(x => x.Grade, y => y.MapFrom(z => z.Grade))
+        .ForMember(X => X.Climbers, y => y.MapFrom(y => y.Climbers != null ? y.Climbers.Select(z => z.UserName) : new List<string>()))
+        .ForMember(x => x.AverageRating, y => y.MapFrom(z => z.Ascents != null ? z.Ascents.Select(z => z.Rating).Average() : new float()))
+        .ForMember(x => x.AscentsNotes, y => y.MapFrom(y => y.Ascents != null ? y.Ascents.Select(z => z.Notes) : new List<string>()))
         .ForMember(x => x.GradeAsFloat, y => y.MapFrom(z => z.GradeAsFloat));
 
+        this.CreateMap<AddRouteRequest, Route>()        
+        .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
+        .ForMember(x => x.Length, y => y.MapFrom(z => z.Length))
+        .ForMember(x => x.Grade, y => y.MapFrom(z => z.Grade));
+       
         this.CreateMap<UpdateRouteRequest, Route>()
         .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
         .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
         .ForMember(x => x.Length, y => y.MapFrom(z => z.Length))
-        .ForMember(x => x.Grade, y => y.MapFrom(z => z.Grade))
-        .ForMember(x => x.GradeAsFloat, y => y.MapFrom(z => z.GradeAsFloat));
+        .ForMember(x => x.Grade, y => y.MapFrom(z => z.Grade));
+
+        this.CreateMap<DeleteRouteRequest, Route>()
+       .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
     }
 }

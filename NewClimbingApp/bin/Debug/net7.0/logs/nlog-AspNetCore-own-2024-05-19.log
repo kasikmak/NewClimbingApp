@@ -1,0 +1,89 @@
+2024-05-19 22:45:36.1604|0|DEBUG|Program|init main |url: |action: 
+2024-05-19 22:46:19.7657|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-19 22:46:19.8543|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-19 22:46:19.8543|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-19 22:46:25.1760|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-19 22:46:34.8827|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-19 23:03:26.8766|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags|action: AddCrag
+2024-05-19 23:03:27.2365|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: AddCrag
+2024-05-19 23:14:04.4893|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags|action: GetAllCrags
+2024-05-19 23:14:04.5643|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-19 23:16:47.6475|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:16:47.6978|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:37:40.7157|0|DEBUG|Program|init main |url: |action: 
+2024-05-19 23:37:48.7525|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-19 23:37:49.1137|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-19 23:37:49.1137|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-19 23:37:51.9703|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-19 23:37:59.6955|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-19 23:38:44.2528|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:38:44.6095|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:40:00.2826|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags|action: GetAllCrags
+2024-05-19 23:40:25.5938|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-19 23:40:27.6561|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at NewClimbingApp.DataAccess.CQRS.Queries.GetCragQuery.Execute(NewClimbingAppContext context) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\CQRS\Queries\GetCragQuery.cs:line 20
+   at NewClimbingApp.ApplicationServices.API.Handlers.Crags.GetCragByIdHandler.Handle(GetCragByIdRequest request, CancellationToken cancellationToken) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\API\Handlers\Crags\GetCragByIdHandler.cs:line 31
+   at NewClimbingApp.Controllers.ApiControllerBase.HandleRequest[TRequest,TResponse](TRequest request) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp\Controllers\ApiControllerBase.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)|url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:41:54.7259|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-19 23:41:54.7627|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-19 23:45:02.3473|0|DEBUG|Program|init main |url: |action: 
+2024-05-19 23:45:05.6702|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-19 23:45:05.6752|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-19 23:45:05.6752|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-19 23:45:06.3401|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-19 23:45:07.4709|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-19 23:47:17.6267|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:47:17.6753|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags/1|action: GetCragById
+2024-05-19 23:47:37.1895|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags/2|action: GetCragById
+2024-05-19 23:47:37.1895|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags/2|action: GetCragById
+2024-05-19 23:48:50.5020|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags/2|action: UpdateCrag
+2024-05-19 23:48:50.5555|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags/2|action: UpdateCrag
+2024-05-19 23:53:38.1984|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: AddRoute
+2024-05-19 23:53:38.2049|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: AddRoute
+2024-05-19 23:55:13.6061|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: AddRoute
+2024-05-19 23:55:13.6061|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: AddRoute
+2024-05-19 23:55:15.1792|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-19 23:55:15.4439|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.MissingMethodException: Attempted to access a missing method.
+   at NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.AddRouteRequest.get_GradeAsFloat()
+   at Microsoft.Extensions.Internal.PropertyHelper.CallNullSafePropertyGetter[TDeclaringType,TValue](Func`2 getter, Object target)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationEntry.get_Model()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>n__1(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at FluentValidation.AspNetCore.FluentValidationVisitor.<>c__DisplayClass2_0.<Validate>g__BaseValidate|0() in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 45
+   at FluentValidation.AspNetCore.FluentValidationVisitor.ValidateInternal(ModelMetadata metadata, String key, Object model, Func`1 continuation) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 63
+   at FluentValidation.AspNetCore.FluentValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container) in /_/src/FluentValidation.AspNetCore/FluentValidationVisitor.cs:line 47
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)|url: https://localhost/Routes|action: AddRoute
+2024-05-19 23:55:21.0102|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 

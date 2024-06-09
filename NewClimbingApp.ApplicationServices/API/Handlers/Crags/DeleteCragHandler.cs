@@ -31,6 +31,13 @@ public class DeleteCragHandler : IRequestHandler<DeleteCragRequest, DeleteCragRe
 
     public async Task<DeleteCragResponse> Handle(DeleteCragRequest request, CancellationToken cancellationToken)
     {
+        if(request.AuthenticationRole == "Guest" ||request.AuthenticationRole == "Climber")
+        {
+            return new DeleteCragResponse
+            {
+                Error = new ErrorModel(ErrorType.Forbidden)
+            };
+        }
         var query = new GetCragQuery { Id = request.Id };
         var cragToDelete = await queryExecutor.Execute(query);
         if (cragToDelete != null)
@@ -40,7 +47,6 @@ public class DeleteCragHandler : IRequestHandler<DeleteCragRequest, DeleteCragRe
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
-       // var cragToDelete = this.mapper.Map<Crag>(request);
         var command = new DeleteCragCommand
         {
             Parameter = cragToDelete

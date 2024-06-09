@@ -1,0 +1,12 @@
+2024-05-08 00:02:45.2594|0|DEBUG|Program|init main |url: |action: 
+2024-05-08 00:02:49.0340|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-08 00:02:49.0414|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-08 00:02:49.0414|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-08 00:02:49.8114|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-08 00:02:52.2043|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-08 00:18:01.0716|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents|action: AddAscent
+2024-05-08 00:18:01.3097|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents|action: AddAscent
+2024-05-08 00:19:42.5463|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents|action: AddAscent
+2024-05-08 00:19:42.5584|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents|action: AddAscent
+2024-05-08 00:19:42.5584|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents|action: AddAscent
+2024-05-08 00:19:42.6842|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents|action: AddAscent

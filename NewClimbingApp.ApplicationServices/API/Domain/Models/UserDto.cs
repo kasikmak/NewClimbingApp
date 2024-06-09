@@ -18,18 +18,9 @@ public class UserDto
     public string FirstName { get; set; }  
     public string LastName { get; set; }   
     public string Nationality { get; set; }
-
     [JsonIgnore]
-    public string Password { get; set; }
-   /* public enum Role
-    {
-        Admin = 0,
-        Climber = 1,
-        Equiper = 2,
-        Guest = 3
-    };*/
-
+    public string Password { get; set; } 
     public UserRole Role  { get; set; }      
-
     public List<string> Routes { get; set; }
+    public List<string> Ascents { get; set; }
 }

@@ -31,7 +31,9 @@ public class GetUserQuery : QueryBase<User>
             };
         if(this.UserId != null)
         {
-            return await context.Users.FirstOrDefaultAsync(x=>x.Id == this.UserId);
+            return await context.Users
+                .Include(x => x.Routes)
+                .FirstOrDefaultAsync(x=>x.Id == this.UserId);
         }
         return null;
     }

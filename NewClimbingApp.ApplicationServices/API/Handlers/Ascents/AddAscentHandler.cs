@@ -10,6 +10,7 @@ using NewClimbingApp.DataAccess.CQRS.Queries;
 using NewClimbingApp.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -30,28 +31,29 @@ public class AddAscentHandler : IRequestHandler<AddAscentRequest, AddAscentRespo
         this.commandExecutor = commandExecutor;
     }
     public async Task<AddAscentResponse> Handle(AddAscentRequest request, CancellationToken cancellationToken)
-    {
-        /*var query = new GetRouteQuery { Id = request.RouteId };
-        var routeToUpdate = await queryExecutor.Execute(query);
-        if(routeToUpdate == null) 
+    {        
+        var query = new GetRouteQuery
         {
-            new AddAscentResponse
+            Id = request.RouteId
+        };
+        var route = await queryExecutor.Execute(query);
+        if(route == null)
+        {
+            return new AddAscentResponse
             {
-                Error = new Domain.ErrorHandling.ErrorModel(ErrorType.NotFound)
+                Error = new ErrorModel(ErrorType.NotFound)
             };
-        }*/
+        }
         var ascent = mapper.Map<Ascent>(request);
+        var userIdstring = request.AuthenticationId;
+        var userId = int.Parse(userIdstring);        
         var command = new AddAscentCommand
         {
-            Parameter = ascent
+           
+            Parameter = ascent,
+            ClimberId = userId,
         };
-        var ascentAdded = await commandExecutor.Execute(command);
-        /*  routeToUpdate.Ascent.IsClimbed = true;
-          var command2 = new UpdateAscentCommand
-          {
-              Parameter = ascentToAdd,
-          };
-          var addedAscent = await commandExecutor.Execute(command2)*/
+        var ascentAdded = await commandExecutor.Execute(command);        
         return new AddAscentResponse
         {
             Data = mapper.Map<AscentDto>(ascentAdded)

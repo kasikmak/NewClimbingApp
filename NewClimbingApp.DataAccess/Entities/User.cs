@@ -26,8 +26,8 @@ public class User : EntityBase
     public string Nationality { get; set; }
     public enum UserRole
     {
-        Admin = 0,
-        Climber = 1,
+        Climber = 0,
+        Admin = 1,
         Equiper = 2,
         Guest = 3
     };
@@ -36,8 +36,7 @@ public class User : EntityBase
     [Required]
     [MinLength(8)]
     public string PasswordHash { get; set; }
-    public List<Route> Routes { get; set; }       
-
-    public List<Ascent> Ascents { get; set; }     
+    public List<Route>? Routes { get; set; }       
+    public List<Ascent>? Ascents { get; set; }     
 
 }

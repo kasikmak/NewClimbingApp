@@ -1,0 +1,45 @@
+2024-05-24 12:12:50.7020|0|DEBUG|Program|init main |url: |action: 
+2024-05-24 12:14:04.8883|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-24 12:14:05.0008|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-24 12:14:05.0008|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-24 12:14:18.4859|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-24 12:14:48.2239|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-24 12:38:32.7945|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/9|action: DeleteRoute
+2024-05-24 12:38:33.6960|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/9|action: DeleteRoute
+2024-05-24 12:57:07.7268|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/10|action: DeleteRoute
+2024-05-24 12:57:07.7268|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/10|action: DeleteRoute
+2024-05-24 12:57:22.1380|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/11|action: DeleteRoute
+2024-05-24 12:57:22.1646|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/11|action: DeleteRoute
+2024-05-24 12:57:35.6351|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/12|action: DeleteRoute
+2024-05-24 12:57:35.6531|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/12|action: DeleteRoute
+2024-05-24 12:57:49.3557|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/13|action: DeleteRoute
+2024-05-24 12:57:49.3557|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/13|action: DeleteRoute
+2024-05-24 13:17:20.2806|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-24 13:17:20.3128|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-24 13:20:36.5395|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents|action: 
+2024-05-24 13:20:53.2000|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents/7|action: GetAscentById
+2024-05-24 13:20:53.2663|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents/7|action: GetAscentById
+2024-05-24 13:21:54.4956|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:21:54.5130|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:22:49.1534|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:22:49.1860|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:25:37.6812|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:25:37.6812|0|INFO|NewClimbingApp.Controllers.AscentsController|We are in Ascents |url: https://localhost/Ascents/ascents/4|action: GetAscentsByRating
+2024-05-24 13:28:10.5555|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags|action: GetAllCrags
+2024-05-24 13:28:10.5743|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-24 13:29:27.6192|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/grade/V|action: GetRoutesByGrade
+2024-05-24 13:29:27.6325|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/grade/V|action: GetRoutesByGrade
+2024-05-24 13:29:43.0465|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/grade/v|action: GetRoutesByGrade
+2024-05-24 13:29:43.0465|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/grade/v|action: GetRoutesByGrade
+2024-05-24 13:30:10.5569|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users|action: GetUsers
+2024-05-24 13:30:10.5875|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: GetUsers
+2024-05-24 14:19:00.6619|0|DEBUG|Program|init main |url: |action: 
+2024-05-24 14:19:14.8200|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-24 14:19:14.9981|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-24 14:19:14.9981|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-24 14:19:19.9655|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-24 14:19:27.8052|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-24 15:37:30.8936|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users|action: GetUsers
+2024-05-24 15:37:31.2427|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: GetUsers
+2024-05-24 15:46:58.4772|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users|action: GetUsers
+2024-05-24 15:46:58.4772|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: GetUsers

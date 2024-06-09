@@ -10,4 +10,6 @@ public class RequestBase
 {
     public string? AuthenticationName { get; set; }
     public string? AuthenticationRole { get; set; }
+
+    public string? AuthenticationId { get; set; }
 }

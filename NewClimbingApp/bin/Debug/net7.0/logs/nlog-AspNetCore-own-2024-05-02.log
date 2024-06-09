@@ -1,0 +1,6 @@
+2024-05-02 15:35:20.4801|0|DEBUG|Program|init main |url: |action: 
+2024-05-02 15:35:32.9180|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-02 15:35:33.1747|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-02 15:35:33.1747|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-02 15:35:38.6382|9|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was not authenticated. |url: https://localhost/Users|action: AddUser
+2024-05-02 15:35:39.4848|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: AddUser

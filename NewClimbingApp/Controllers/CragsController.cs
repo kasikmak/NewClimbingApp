@@ -6,7 +6,7 @@ using NewClimbingApp.ApplicationServices.API.Domain.Responses.Crags;
 
 namespace NewClimbingApp.Controllers;
 
-//[Authorize]
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class CragsController : ApiControllerBase

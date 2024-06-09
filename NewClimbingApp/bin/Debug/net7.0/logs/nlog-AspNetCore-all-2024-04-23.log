@@ -1,0 +1,757 @@
+2024-04-23 19:43:43.4491|0|DEBUG|Program|init main 
+2024-04-23 19:43:56.0032|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-23 19:43:56.6992|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-23 19:43:57.0828|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\---\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2024-04-23 19:43:57.2957|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\---\AppData\Local\ASP.NET\DataProtection-Keys\key-19f867d4-1440-4df8-b208-5ca6c6446feb.xml'. 
+2024-04-23 19:43:57.8968|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\---\AppData\Local\ASP.NET\DataProtection-Keys\key-bbbb6ebe-2183-495e-8935-0cce6fbe17c8.xml'. 
+2024-04-23 19:43:58.0298|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {19f867d4-1440-4df8-b208-5ca6c6446feb}. 
+2024-04-23 19:43:58.1515|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {bbbb6ebe-2183-495e-8935-0cce6fbe17c8}. 
+2024-04-23 19:43:58.1775|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {19f867d4-1440-4df8-b208-5ca6c6446feb} with expiration date 2024-07-19 14:02:28Z as default key. 
+2024-04-23 19:43:58.1775|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-04-23 19:43:58.1845|51|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2024-04-23 19:43:58.1845|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-04-23 19:43:58.1845|4|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2024-04-23 19:43:58.1845|3|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2024-04-23 19:43:58.2138|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {19f867d4-1440-4df8-b208-5ca6c6446feb} as the default key. 
+2024-04-23 19:43:58.2138|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {19f867d4-1440-4df8-b208-5ca6c6446feb} was loaded during application startup. 
+2024-04-23 19:43:59.3283|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly NewClimbingApp 
+2024-04-23 19:43:59.3283|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-23 19:43:59.3283|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-23 19:43:59.3283|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-23 19:43:59.3713|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-23 19:43:59.3713|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp 
+2024-04-23 19:43:59.3713|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-23 19:43:59.9529|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/users - - 
+2024-04-23 19:43:59.9529|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/swagger/index.html - - 
+2024-04-23 19:44:00.0615|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-23 19:44:00.0615|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-23 19:44:00.0615|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:44:00.0615|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:44:00.1842|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2024-04-23 19:44:00.1842|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-04-23 19:44:00.1842|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/users' 
+2024-04-23 19:44:00.1842|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:44:02.4150|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-04-23 19:44:02.4150|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-04-23 19:44:02.7146|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:44:02.7146|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:44:02.8910|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:44:02.8910|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:44:02.8910|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:44:02.8910|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:44:03.0629|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18302628891539275791" disconnecting. 
+2024-04-23 19:44:03.0629|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/users - - 
+2024-04-23 19:44:03.0629|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:44:03.0629|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/users' 
+2024-04-23 19:44:03.0629|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' with route pattern 'Users' is valid for the request path '/users' 
+2024-04-23 19:44:03.0629|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:44:54.2550|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/users - - - 204 - - 3083.1862ms 
+2024-04-23 19:45:26.9929|1|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-23 19:45:29.5787|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "17942340917054668806" disconnecting. 
+2024-04-23 19:45:31.7400|2|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-23 19:45:31.7400|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/swagger/index.html - - - 200 - text/html;charset=utf-8 91791.6010ms 
+2024-04-23 19:45:32.0528|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/_vs/browserLink - - 
+2024-04-23 19:45:32.0528|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-23 19:45:32.0601|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18230571306091282451" disconnecting. 
+2024-04-23 19:45:32.0902|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 6.2527ms 
+2024-04-23 19:45:32.3449|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18374686494167138355" disconnecting. 
+2024-04-23 19:45:32.3449|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 294.6116ms 
+2024-04-23 19:45:32.5119|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - - 
+2024-04-23 19:45:32.5119|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:45:32.5119|1000|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-04-23 19:45:32.5119|2|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-04-23 19:45:32.5119|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:45:33.0098|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'AscentsId'} was not created on entity type 'AscentUser (Dictionary<string, object>)' as the properties are already covered by the index {'AscentsId', 'ClimbersId'}. 
+2024-04-23 19:45:33.0098|10601|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'ClimbersId'} was not created on entity type 'RouteUser (Dictionary<string, object>)' as the properties are already covered by the index {'ClimbersId', 'RoutesId'}. 
+2024-04-23 19:45:34.0673|10600|DEBUG|Microsoft.EntityFrameworkCore.Model.Validation|The property 'AscentUser (Dictionary<string, object>).AscentsId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-04-23 19:45:34.0673|10600|DEBUG|Microsoft.EntityFrameworkCore.Model.Validation|The property 'AscentUser (Dictionary<string, object>).ClimbersId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-04-23 19:45:34.0673|10600|DEBUG|Microsoft.EntityFrameworkCore.Model.Validation|The property 'RouteUser (Dictionary<string, object>).ClimbersId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-04-23 19:45:34.0673|10600|DEBUG|Microsoft.EntityFrameworkCore.Model.Validation|The property 'RouteUser (Dictionary<string, object>).RoutesId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-04-23 19:45:34.0673|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1557.5091ms 
+2024-04-23 19:45:34.0673|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "16861477015075684391" disconnecting. 
+2024-04-23 19:45:34.9683|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:45:35.6461|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(x => x.UserName == __UserName_0)' 
+2024-04-23 19:45:36.5327|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.FirstName (string) Required MaxLength(25), 2], [Property: User.LastName (string) Required MaxLength(25), 3], [Property: User.Nationality (string) Required MaxLength(25), 4], [Property: User.PasswordHash (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.UserName (string) Required MaxLength(25), 7] }
+            SELECT TOP(1) u.Id, u.Email, u.FirstName, u.LastName, u.Nationality, u.PasswordHash, u.Role, u.UserName
+            FROM Users AS u
+            WHERE u.UserName == @__UserName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        NewClimbingApp.DataAccess.NewClimbingAppContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)' 
+2024-04-23 19:45:36.6514|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:45:36.6550|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:45:36.9347|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (274ms). 
+2024-04-23 19:45:37.0458|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (397ms). 
+2024-04-23 19:45:37.2720|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (627ms). 
+2024-04-23 19:45:37.3281|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:45:39.7592|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:45:39.7709|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:45:40.1960|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (392ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:45:40.3639|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:45:40.3994|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:45:40.4072|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 205ms reading results. 
+2024-04-23 19:45:40.4284|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:45:40.4344|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (6ms). 
+2024-04-23 19:50:55.9137|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:50:55.9282|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:50:55.9694|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:50:55.9694|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:50:55.9694|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/routes - - 
+2024-04-23 19:50:55.9694|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:50:55.9694|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/routes' 
+2024-04-23 19:50:55.9694|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:50:55.9694|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:50:56.0437|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:50:56.0437|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:50:56.1807|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:50:56.1807|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:50:56.1807|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:50:56.1807|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/routes - - - 204 - - 208.5421ms 
+2024-04-23 19:50:56.1895|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/routes - - 
+2024-04-23 19:50:56.1895|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:50:56.1895|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/routes' 
+2024-04-23 19:50:56.1895|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' with route pattern 'Routes' is valid for the request path '/routes' 
+2024-04-23 19:50:56.1895|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:51:01.9605|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:51:01.9713|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest) on controller NewClimbingApp.Controllers.UsersController (NewClimbingApp). 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-23 19:51:01.9713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller NewClimbingApp.Controllers.UsersController (NewClimbingApp) 
+2024-04-23 19:51:01.9713|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users 
+2024-04-23 19:51:01.9713|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller NewClimbingApp.Controllers.UsersController (NewClimbingApp) 
+2024-04-23 19:51:01.9883|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' ... 
+2024-04-23 19:51:01.9883|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' using the name '' in request data ... 
+2024-04-23 19:51:02.0197|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:51:02.0197|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:51:02.0197|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-04-23 19:51:02.0197|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:51:02.0197|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:51:02.0197|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:02.0197|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:02.0197|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:51:02.2328|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String' using the name 'AuthenticationName' in request data ... 
+2024-04-23 19:51:02.2328|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (211ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:51:02.2328|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationName' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:51:02.2328|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:51:02.2328|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:51:02.2328|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:02.2328|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 2ms reading results. 
+2024-04-23 19:51:02.2328|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:02.2328|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:51:02.2699|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String' using the name 'AuthenticationRole' in request data ... 
+2024-04-23 19:51:02.2699|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationRole' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:51:02.2699|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:51:02.2699|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:51:02.2699|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:51:02.2699|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' ... 
+2024-04-23 19:51:39.3346|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:51:39.3346|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:51:39.3346|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:51:39.3346|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:51:39.3346|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:51:39.3479|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllRoutes", controller = "Routes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllRoutes(NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest) on controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp). 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-23 19:51:39.3479|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp) 
+2024-04-23 19:51:39.3479|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes 
+2024-04-23 19:51:39.3479|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp) 
+2024-04-23 19:51:39.3479|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' ... 
+2024-04-23 19:51:39.3479|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' using the name '' in request data ... 
+2024-04-23 19:51:39.3479|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String' using the name 'AuthenticationName' in request data ... 
+2024-04-23 19:51:39.3479|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationName' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:51:39.3479|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:51:39.3479|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String' using the name 'AuthenticationRole' in request data ... 
+2024-04-23 19:51:39.3479|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationRole' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:51:39.3479|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:51:39.3479|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:51:39.3479|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:51:39.3479|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' ... 
+2024-04-23 19:51:39.7192|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:51:39.7192|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:51:39.7192|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:51:39.7192|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:51:39.7192|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:51:39.7192|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:51:39.7192|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) - Validation state: Valid 
+2024-04-23 19:51:39.7192|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) with arguments (NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest) 
+2024-04-23 19:51:39.7192|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) - Validation state: Valid 
+2024-04-23 19:51:39.7192|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) with arguments (NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest) 
+2024-04-23 19:51:57.7204|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<User>()
+    .OrderBy(x => x.UserName)
+    .ThenBy(x => x.Role)
+    .Include(x => x.Routes)
+    .AsNoTracking()' 
+2024-04-23 19:51:57.7204|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Route>()
+    .OrderBy(x => x.GradeAsFloat)
+    .Include(x => x.Ascent)' 
+2024-04-23 19:51:57.7475|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'User.Routes'. 
+2024-04-23 19:51:57.7735|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Route.Ascent'. 
+2024-04-23 19:51:59.4078|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required MaxLength(50), 1], [Property: User.FirstName (string) Required MaxLength(25), 2], [Property: User.LastName (string) Required MaxLength(25), 3], [Property: User.Nationality (string) Required MaxLength(25), 4], [Property: User.PasswordHash (string) Required, 5], [Property: User.Role (UserRole) Required, 6], [Property: User.UserName (string) Required MaxLength(25), 7] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Route.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 8], [Property: Route.AscentId (int?) FK Index, 9], [Property: Route.CragId (int?) FK Index, 10], [Property: Route.EquiperId (int?), 11], [Property: Route.Grade (string) Required MaxLength(5), 12], [Property: Route.IsClimbed (bool) Required, 13], [Property: Route.Length (int?), 14], [Property: Route.Name (string) Required MaxLength(100), 15], [Property: Route.Type (RouteType) Required, 16] }
+            3 -> 17
+            4 -> 18
+            5 -> 8
+        SELECT u.Id, u.Email, u.FirstName, u.LastName, u.Nationality, u.PasswordHash, u.Role, u.UserName, t.Id, t.AscentId, t.CragId, t.EquiperId, t.Grade, t.IsClimbed, t.Length, t.Name, t.Type, t.ClimbersId, t.RoutesId
+        FROM Users AS u
+        LEFT JOIN 
+        (
+            SELECT r0.Id, r0.AscentId, r0.CragId, r0.EquiperId, r0.Grade, r0.IsClimbed, r0.Length, r0.Name, r0.Type, r.ClimbersId, r.RoutesId
+            FROM RouteUser AS r
+            INNER JOIN Routes AS r0 ON r.RoutesId == r0.Id
+        ) AS t ON u.Id == t.ClimbersId
+        ORDER BY u.UserName ASC, u.Role ASC, u.Id ASC, t.ClimbersId ASC, t.RoutesId ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    NewClimbingApp.DataAccess.NewClimbingAppContext, 
+    False, 
+    False, 
+    True
+)' 
+2024-04-23 19:51:59.4078|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:51:59.4078|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:51:59.4078|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:51:59.4078|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:59.4078|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:59.4078|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName], [t].[Id], [t].[AscentId], [t].[CragId], [t].[EquiperId], [t].[Grade], [t].[IsClimbed], [t].[Length], [t].[Name], [t].[Type], [t].[ClimbersId], [t].[RoutesId]
+FROM [Users] AS [u]
+LEFT JOIN (
+    SELECT [r0].[Id], [r0].[AscentId], [r0].[CragId], [r0].[EquiperId], [r0].[Grade], [r0].[IsClimbed], [r0].[Length], [r0].[Name], [r0].[Type], [r].[ClimbersId], [r].[RoutesId]
+    FROM [RouteUser] AS [r]
+    INNER JOIN [Routes] AS [r0] ON [r].[RoutesId] = [r0].[Id]
+) AS [t] ON [u].[Id] = [t].[ClimbersId]
+ORDER BY [u].[UserName], [u].[Role], [u].[Id], [t].[ClimbersId], [t].[RoutesId] 
+2024-04-23 19:51:59.8280|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (417ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName], [t].[Id], [t].[AscentId], [t].[CragId], [t].[EquiperId], [t].[Grade], [t].[IsClimbed], [t].[Length], [t].[Name], [t].[Type], [t].[ClimbersId], [t].[RoutesId]
+FROM [Users] AS [u]
+LEFT JOIN (
+    SELECT [r0].[Id], [r0].[AscentId], [r0].[CragId], [r0].[EquiperId], [r0].[Grade], [r0].[IsClimbed], [r0].[Length], [r0].[Name], [r0].[Type], [r].[ClimbersId], [r].[RoutesId]
+    FROM [RouteUser] AS [r]
+    INNER JOIN [Routes] AS [r0] ON [r].[RoutesId] = [r0].[Id]
+) AS [t] ON [u].[Id] = [t].[ClimbersId]
+ORDER BY [u].[UserName], [u].[Role], [u].[Id], [t].[ClimbersId], [t].[RoutesId] 
+2024-04-23 19:51:59.8420|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:59.8420|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 13ms reading results. 
+2024-04-23 19:51:59.8420|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:51:59.8420|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:52:01.4127|103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21679.921ms. 
+2024-04-23 19:52:01.4147|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:52:01.4147|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:52:01.4554|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:52:01.4554|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:52:01.4554|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:52:01.4554|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-04-23 19:52:01.4554|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-04-23 19:52:01.4554|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-04-23 19:52:01.4554|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-04-23 19:52:01.4554|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-04-23 19:52:01.4554|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'NewClimbingApp.ApplicationServices.API.Domain.Responses.Users.GetUsersResponse'. 
+2024-04-23 19:52:02.5334|6|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:52:02.5334|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:52:02.5633|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:52:02.6238|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) in 60646.3572ms 
+2024-04-23 19:52:02.6238|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:52:02.6238|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:52:02.6238|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:52:02.6238|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (1ms). 
+2024-04-23 19:52:02.6238|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/users - - - 0 - application/json;+charset=utf-8 479566.2721ms 
+2024-04-23 19:52:02.7226|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:52:02.7226|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:52:02.9366|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) in 23588.3516ms 
+2024-04-23 19:52:03.0753|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:52:05.0019|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The LINQ expression 'DbSet<Route>()
+    .OrderBy(r => r.GradeAsFloat)' could not be translated. Additional information: Translation of member 'GradeAsFloat' on entity type 'Route' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0&)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at NewClimbingApp.DataAccess.CQRS.Queries.GetRoutesQuery.Execute(NewClimbingAppContext context) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\CQRS\Queries\GetRoutesQuery.cs:line 33
+   at NewClimbingApp.ApplicationServices.API.Handlers.Routes.GetRoutesHandler.Handle(GetRoutesRequest request, CancellationToken cancellationToken) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\API\Handlers\Routes\GetRoutesHandler.cs:line 34
+   at NewClimbingApp.Controllers.ApiControllerBase.HandleRequest[TRequest,TResponse](TRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-23 19:52:11.0268|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "17726168147825786900" disconnecting. 
+2024-04-23 19:52:15.4348|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:52:15.4348|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:52:15.4348|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-04-23 19:52:15.4348|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/routes - - - 500 - text/plain;+charset=utf-8 79245.9605ms 
+2024-04-23 19:53:13.4050|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/ascents - - 
+2024-04-23 19:53:13.4050|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:13.4079|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ascents' 
+2024-04-23 19:53:13.4079|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:13.4079|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:53:13.4443|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:13.4443|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:13.4443|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:13.4443|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:53:13.4443|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/ascents - - - 204 - - 40.8786ms 
+2024-04-23 19:53:13.4443|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/ascents - - 
+2024-04-23 19:53:13.4443|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:13.4443|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/ascents' 
+2024-04-23 19:53:13.4443|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:16.8621|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:53:16.8643|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:53:16.8643|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:53:16.8643|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-04-23 19:53:16.8643|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:16.8643|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:16.8643|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:16.8643|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:16.8643|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:17.2253|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (360ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:17.2253|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:53:17.2253|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:17.2253|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 0ms reading results. 
+2024-04-23 19:53:17.2253|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:17.2253|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:53:17.2253|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:53:17.2253|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:17.2253|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:17.2253|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:17.2253|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:17.2253|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:17.2253|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:53:17.2253|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "17726168143530819600" disconnecting. 
+2024-04-23 19:53:17.2253|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:17.2253|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-04-23 19:53:17.2253|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/ascents - - - 405 - - 3786.4138ms 
+2024-04-23 19:53:22.7995|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/Crags - - 
+2024-04-23 19:53:22.7995|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:22.7995|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Crags' 
+2024-04-23 19:53:22.7995|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:22.7995|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:53:22.7995|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:22.7995|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:22.7995|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:22.7995|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:53:22.7995|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/Crags - - - 204 - - 2.3526ms 
+2024-04-23 19:53:22.7995|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/Crags - - 
+2024-04-23 19:53:22.7995|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:22.7995|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Crags' 
+2024-04-23 19:53:22.7995|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp)' with route pattern 'Crags' is valid for the request path '/Crags' 
+2024-04-23 19:53:22.7995|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp)' 
+2024-04-23 19:53:25.0237|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:53:25.0237|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:53:25.0237|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:53:25.0237|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-04-23 19:53:25.0237|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:25.0237|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:25.0237|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:25.0237|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:25.0279|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:25.1347|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (107ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:25.1347|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:53:25.1347|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:25.1347|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 0ms reading results. 
+2024-04-23 19:53:25.1347|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:25.1347|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:53:25.1347|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:53:25.1347|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:25.1347|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:25.1347|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:25.1347|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp)' 
+2024-04-23 19:53:25.1683|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCrags", controller = "Crags"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCrags(NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest) on controller NewClimbingApp.Controllers.CragsController (NewClimbingApp). 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-23 19:53:25.1683|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller NewClimbingApp.Controllers.CragsController (NewClimbingApp) 
+2024-04-23 19:53:25.1683|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags 
+2024-04-23 19:53:25.1683|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller NewClimbingApp.Controllers.CragsController (NewClimbingApp) 
+2024-04-23 19:53:25.1683|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest' ... 
+2024-04-23 19:53:25.1683|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest' using the name '' in request data ... 
+2024-04-23 19:53:25.1683|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationName' of type 'System.String' using the name 'AuthenticationName' in request data ... 
+2024-04-23 19:53:25.1683|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationName' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:53:25.1683|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:53:25.1683|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationRole' of type 'System.String' using the name 'AuthenticationRole' in request data ... 
+2024-04-23 19:53:25.1683|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationRole' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:53:25.1683|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:53:25.1683|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest'. 
+2024-04-23 19:53:25.1683|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest'. 
+2024-04-23 19:53:25.1683|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest' ... 
+2024-04-23 19:53:25.1683|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest'. 
+2024-04-23 19:53:25.1683|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:25.1683|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:25.1683|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp) - Validation state: Valid 
+2024-04-23 19:53:25.1683|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp) with arguments (NewClimbingApp.ApplicationServices.API.Domain.Requests.Crags.GetAllCragsRequest) 
+2024-04-23 19:53:31.1899|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Crag>()
+    .Include(x => x.Routes)
+    .AsNoTracking()' 
+2024-04-23 19:53:31.1899|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Crag.Routes'. 
+2024-04-23 19:53:31.2090|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Crag>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Crag.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Crag.Description (string) MaxLength(1000), 1], [Property: Crag.Location (string) Required MaxLength(50), 2], [Property: Crag.Name (string) Required MaxLength(100), 3] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Route.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 4], [Property: Route.AscentId (int?) FK Index, 5], [Property: Route.CragId (int?) FK Index, 6], [Property: Route.EquiperId (int?), 7], [Property: Route.Grade (string) Required MaxLength(5), 8], [Property: Route.IsClimbed (bool) Required, 9], [Property: Route.Length (int?), 10], [Property: Route.Name (string) Required MaxLength(100), 11], [Property: Route.Type (RouteType) Required, 12] }
+            3 -> 4
+        SELECT c.Id, c.Description, c.Location, c.Name, r.Id, r.AscentId, r.CragId, r.EquiperId, r.Grade, r.IsClimbed, r.Length, r.Name, r.Type
+        FROM Crags AS c
+        LEFT JOIN Routes AS r ON c.Id == r.CragId
+        ORDER BY c.Id ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Crag>, 
+    NewClimbingApp.DataAccess.NewClimbingAppContext, 
+    False, 
+    False, 
+    True
+)' 
+2024-04-23 19:53:31.2090|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:53:31.2090|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:31.2090|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:31.2090|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:31.2090|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:31.2090|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Location], [c].[Name], [r].[Id], [r].[AscentId], [r].[CragId], [r].[EquiperId], [r].[Grade], [r].[IsClimbed], [r].[Length], [r].[Name], [r].[Type]
+FROM [Crags] AS [c]
+LEFT JOIN [Routes] AS [r] ON [c].[Id] = [r].[CragId]
+ORDER BY [c].[Id] 
+2024-04-23 19:53:31.3030|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Description], [c].[Location], [c].[Name], [r].[Id], [r].[AscentId], [r].[CragId], [r].[EquiperId], [r].[Grade], [r].[IsClimbed], [r].[Length], [r].[Name], [r].[Type]
+FROM [Crags] AS [c]
+LEFT JOIN [Routes] AS [r] ON [c].[Id] = [r].[CragId]
+ORDER BY [c].[Id] 
+2024-04-23 19:53:31.3258|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:31.3258|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 22ms reading results. 
+2024-04-23 19:53:31.3258|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:31.3258|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:53:31.3317|103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6159.8168ms. 
+2024-04-23 19:53:31.3317|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:31.3317|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:31.3317|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:31.3317|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:31.3317|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:53:31.3317|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-04-23 19:53:31.3317|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-04-23 19:53:31.3317|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-04-23 19:53:31.3317|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-04-23 19:53:31.3317|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-04-23 19:53:31.3317|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'NewClimbingApp.ApplicationServices.API.Domain.Responses.Crags.GetAllCragsResponse'. 
+2024-04-23 19:53:31.3317|6|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:53:31.3317|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:31.3317|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:31.3317|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp) in 6170.0875ms 
+2024-04-23 19:53:31.3317|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'NewClimbingApp.Controllers.CragsController.GetAllCrags (NewClimbingApp)' 
+2024-04-23 19:53:31.3317|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:53:31.3317|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:31.3317|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-04-23 19:53:31.3317|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "18014398511092596764" disconnecting. 
+2024-04-23 19:53:31.3317|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/Crags - - - 200 - application/json;+charset=utf-8 8531.9090ms 
+2024-04-23 19:53:47.4761|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/users - - 
+2024-04-23 19:53:47.4761|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:47.4761|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/users' 
+2024-04-23 19:53:47.4761|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:53:47.4761|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:53:47.4761|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:47.4761|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:47.4761|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:47.4761|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:53:47.4761|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/users - - - 204 - - 5.6292ms 
+2024-04-23 19:53:47.4761|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/users - - 
+2024-04-23 19:53:47.4761|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:53:47.4761|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/users' 
+2024-04-23 19:53:47.4761|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' with route pattern 'Users' is valid for the request path '/users' 
+2024-04-23 19:53:47.4761|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:53:51.2597|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:53:51.2597|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:53:51.2597|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:53:51.2597|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-04-23 19:53:51.2597|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:51.2597|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:53:51.2597|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:51.2597|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:51.2597|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:51.2790|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:53:51.2790|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:53:51.2790|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:51.2790|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 0ms reading results. 
+2024-04-23 19:53:51.2790|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:51.2790|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:53:51.2790|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:53:51.2790|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:53:51.2790|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:53:51.2790|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:53:51.2790|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:53:51.2882|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest) on controller NewClimbingApp.Controllers.UsersController (NewClimbingApp). 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-23 19:53:51.2882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller NewClimbingApp.Controllers.UsersController (NewClimbingApp) 
+2024-04-23 19:53:51.2882|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users 
+2024-04-23 19:53:51.2882|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller NewClimbingApp.Controllers.UsersController (NewClimbingApp) 
+2024-04-23 19:53:51.2882|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' ... 
+2024-04-23 19:53:51.2882|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' using the name '' in request data ... 
+2024-04-23 19:53:51.2882|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String' using the name 'AuthenticationName' in request data ... 
+2024-04-23 19:53:51.2882|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationName' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:53:51.2882|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:53:51.2882|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String' using the name 'AuthenticationRole' in request data ... 
+2024-04-23 19:53:51.2882|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationRole' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:53:51.2882|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:53:51.2882|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:53:51.2882|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:53:51.2882|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest' ... 
+2024-04-23 19:53:51.2882|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest'. 
+2024-04-23 19:53:51.2882|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:51.2882|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:51.2882|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) - Validation state: Valid 
+2024-04-23 19:53:51.2882|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) with arguments (NewClimbingApp.ApplicationServices.API.Domain.Requests.Users.GetUsersRequest) 
+2024-04-23 19:53:54.0254|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:53:54.0254|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (1ms). 
+2024-04-23 19:53:54.0254|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (1ms). 
+2024-04-23 19:53:54.0254|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:54.0254|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:54.0254|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName], [t].[Id], [t].[AscentId], [t].[CragId], [t].[EquiperId], [t].[Grade], [t].[IsClimbed], [t].[Length], [t].[Name], [t].[Type], [t].[ClimbersId], [t].[RoutesId]
+FROM [Users] AS [u]
+LEFT JOIN (
+    SELECT [r0].[Id], [r0].[AscentId], [r0].[CragId], [r0].[EquiperId], [r0].[Grade], [r0].[IsClimbed], [r0].[Length], [r0].[Name], [r0].[Type], [r].[ClimbersId], [r].[RoutesId]
+    FROM [RouteUser] AS [r]
+    INNER JOIN [Routes] AS [r0] ON [r].[RoutesId] = [r0].[Id]
+) AS [t] ON [u].[Id] = [t].[ClimbersId]
+ORDER BY [u].[UserName], [u].[Role], [u].[Id], [t].[ClimbersId], [t].[RoutesId] 
+2024-04-23 19:53:54.0366|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName], [t].[Id], [t].[AscentId], [t].[CragId], [t].[EquiperId], [t].[Grade], [t].[IsClimbed], [t].[Length], [t].[Name], [t].[Type], [t].[ClimbersId], [t].[RoutesId]
+FROM [Users] AS [u]
+LEFT JOIN (
+    SELECT [r0].[Id], [r0].[AscentId], [r0].[CragId], [r0].[EquiperId], [r0].[Grade], [r0].[IsClimbed], [r0].[Length], [r0].[Name], [r0].[Type], [r].[ClimbersId], [r].[RoutesId]
+    FROM [RouteUser] AS [r]
+    INNER JOIN [Routes] AS [r0] ON [r].[RoutesId] = [r0].[Id]
+) AS [t] ON [u].[Id] = [t].[ClimbersId]
+ORDER BY [u].[UserName], [u].[Role], [u].[Id], [t].[ClimbersId], [t].[RoutesId] 
+2024-04-23 19:53:54.0366|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:54.0366|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 0ms reading results. 
+2024-04-23 19:53:54.0366|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:54.0366|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:53:54.0366|103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2747.0263ms. 
+2024-04-23 19:53:54.0366|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:54.0366|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:53:54.0366|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:54.0366|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:54.0366|5|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:53:54.0366|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-04-23 19:53:54.0366|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-04-23 19:53:54.0366|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-04-23 19:53:54.0366|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-04-23 19:53:54.0366|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-04-23 19:53:54.0366|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'NewClimbingApp.ApplicationServices.API.Domain.Responses.Users.GetUsersResponse'. 
+2024-04-23 19:53:54.0366|6|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-04-23 19:53:54.0366|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:54.0366|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-04-23 19:53:54.0366|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp) in 2751.7126ms 
+2024-04-23 19:53:54.0366|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'NewClimbingApp.Controllers.UsersController.GetUsers (NewClimbingApp)' 
+2024-04-23 19:53:54.0366|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:53:54.0366|1|DEBUG|Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer|Connection ID "17726168147825786907" disconnecting. 
+2024-04-23 19:53:54.0366|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:53:54.0366|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-04-23 19:53:54.0366|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/users - - - 200 - application/json;+charset=utf-8 6553.4930ms 
+2024-04-23 19:54:04.6157|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:44374/routes - - 
+2024-04-23 19:54:04.6157|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:54:04.6157|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/routes' 
+2024-04-23 19:54:04.6157|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint '405 HTTP Method Not Supported' 
+2024-04-23 19:54:04.6157|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header 
+2024-04-23 19:54:04.6157|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:54:04.6157|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:54:04.6157|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:54:04.6157|1|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request is a preflight request. 
+2024-04-23 19:54:04.6157|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:44374/routes - - - 204 - - 3.3348ms 
+2024-04-23 19:54:04.6157|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:44374/routes - - 
+2024-04-23 19:54:04.6157|2|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-04-23 19:54:04.6157|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/routes' 
+2024-04-23 19:54:04.6157|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' with route pattern 'Routes' is valid for the request path '/routes' 
+2024-04-23 19:54:04.6157|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:54:07.1927|10403|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.16 initialized 'NewClimbingAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.16' with options: None 
+2024-04-23 19:54:07.1927|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-04-23 19:54:07.1927|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-04-23 19:54:07.1927|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-04-23 19:54:07.1927|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:54:07.1927|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-04-23 19:54:07.1927|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:54:07.1927|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:54:07.1927|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:54:07.1927|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__UserName_0='?' (Size = 25)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__UserName_0 
+2024-04-23 19:54:07.1927|10806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'NewClimbingAppContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-04-23 19:54:07.1927|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:54:07.1927|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' is being disposed after spending 0ms reading results. 
+2024-04-23 19:54:07.1927|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:54:07.1927|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS' (0ms). 
+2024-04-23 19:54:07.1927|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Invalid Authorization Header 
+2024-04-23 19:54:07.2034|15|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-04-23 19:54:07.2034|2|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44330'. 
+2024-04-23 19:54:07.2034|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-04-23 19:54:07.2034|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:54:07.2034|102|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllRoutes", controller = "Routes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllRoutes(NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest) on controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp). 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-23 19:54:07.2034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp) 
+2024-04-23 19:54:07.2034|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes 
+2024-04-23 19:54:07.2034|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller NewClimbingApp.Controllers.RoutesController (NewClimbingApp) 
+2024-04-23 19:54:07.2034|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' ... 
+2024-04-23 19:54:07.2034|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' using the name '' in request data ... 
+2024-04-23 19:54:07.2034|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String' using the name 'AuthenticationName' in request data ... 
+2024-04-23 19:54:07.2034|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationName' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:54:07.2034|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationName' of type 'System.String'. 
+2024-04-23 19:54:07.2034|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String' using the name 'AuthenticationRole' in request data ... 
+2024-04-23 19:54:07.2034|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'AuthenticationRole' for binding property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:54:07.2034|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest.AuthenticationRole' of type 'System.String'. 
+2024-04-23 19:54:07.2034|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:54:07.2034|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:54:07.2034|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest' ... 
+2024-04-23 19:54:07.2034|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'request' of type 'NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest'. 
+2024-04-23 19:54:07.2034|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:54:07.2034|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:54:07.2034|101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) - Validation state: Valid 
+2024-04-23 19:54:07.2034|102|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) with arguments (NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes.GetRoutesRequest) 
+2024-04-23 19:54:33.4571|10800|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'NewClimbingAppContext'. 
+2024-04-23 19:54:33.4730|10801|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'NewClimbingAppContext'. 
+2024-04-23 19:54:47.0439|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Route>()
+    .OrderBy(x => x.GradeAsFloat)
+    .Include(x => x.Ascent)' 
+2024-04-23 19:54:47.0514|10112|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Route.Ascent'. 
+2024-04-23 19:54:47.7458|52|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:54:47.7458|53|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-04-23 19:54:47.9070|105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp) in 40697.738ms 
+2024-04-23 19:54:48.0399|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'NewClimbingApp.Controllers.RoutesController.GetAllRoutes (NewClimbingApp)' 
+2024-04-23 19:54:48.3454|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The LINQ expression 'DbSet<Route>()
+    .OrderBy(r => r.GradeAsFloat)' could not be translated. Additional information: Translation of member 'GradeAsFloat' on entity type 'Route' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.<VisitMethodCall>g__CheckTranslated|15_0(ShapedQueryExpression translated, <>c__DisplayClass15_0&)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.IncludableQueryable`2.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at NewClimbingApp.DataAccess.CQRS.Queries.GetRoutesQuery.Execute(NewClimbingAppContext context) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\CQRS\Queries\GetRoutesQuery.cs:line 33
+   at NewClimbingApp.ApplicationServices.API.Handlers.Routes.GetRoutesHandler.Handle(GetRoutesRequest request, CancellationToken cancellationToken) in C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\API\Handlers\Routes\GetRoutesHandler.cs:line 34
+   at NewClimbingApp.Controllers.ApiControllerBase.HandleRequest[TRequest,TResponse](TRequest request)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-23 19:54:48.3528|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'NewClimbingAppContext' disposed. 
+2024-04-23 19:54:48.3528|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'NewClimbingApp' on server 'DESKTOP-KSU5O1R\SQLEXPRESS'. 
+2024-04-23 19:54:48.3528|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-04-23 19:54:48.3528|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:44374/routes - - - 500 - text/plain;+charset=utf-8 43729.2570ms 

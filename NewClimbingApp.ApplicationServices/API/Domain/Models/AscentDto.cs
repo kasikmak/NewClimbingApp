@@ -13,12 +13,13 @@ public class AscentDto
 {
     public int Id { get; set; }
     public float? Rating { get; set; }
-  //  public bool IsClimbed { get; set; } 
     public AscentStyle Style { get; set; }
 
     [MaxLength(250)]
     public string? Notes { get; set; }
 
-    public List<string>? Routes { get; set; }
-    public List<int>? Climbers { get; set; }
+    public int RouteId { get; set; }
+    public int ClimberId { get; set; }
+
+   
 }

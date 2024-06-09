@@ -22,21 +22,6 @@ namespace NewClimbingApp.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AscentUser", b =>
-                {
-                    b.Property<int>("AscentsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClimbersId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AscentsId", "ClimbersId");
-
-                    b.HasIndex("ClimbersId");
-
-                    b.ToTable("AscentUser");
-                });
-
             modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Ascent", b =>
                 {
                     b.Property<int>("Id")
@@ -44,6 +29,9 @@ namespace NewClimbingApp.DataAccess.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClimberId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsClimbed")
                         .HasColumnType("bit");
@@ -55,10 +43,20 @@ namespace NewClimbingApp.DataAccess.Migrations
                     b.Property<float?>("Rating")
                         .HasColumnType("real");
 
+                    b.Property<int>("RouteId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Style")
                         .HasColumnType("int");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("RouteId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Ascents");
                 });
@@ -98,9 +96,6 @@ namespace NewClimbingApp.DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AscentId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("CragId")
                         .HasColumnType("int");
 
@@ -111,6 +106,9 @@ namespace NewClimbingApp.DataAccess.Migrations
                         .IsRequired()
                         .HasMaxLength(5)
                         .HasColumnType("nvarchar(5)");
+
+                    b.Property<float>("GradeAsFloat")
+                        .HasColumnType("real");
 
                     b.Property<bool>("IsClimbed")
                         .HasColumnType("bit");
@@ -127,8 +125,6 @@ namespace NewClimbingApp.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AscentId");
 
                     b.HasIndex("CragId");
 
@@ -195,32 +191,24 @@ namespace NewClimbingApp.DataAccess.Migrations
                     b.ToTable("RouteUser");
                 });
 
-            modelBuilder.Entity("AscentUser", b =>
+            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Ascent", b =>
                 {
-                    b.HasOne("NewClimbingApp.DataAccess.Entities.Ascent", null)
-                        .WithMany()
-                        .HasForeignKey("AscentsId")
+                    b.HasOne("NewClimbingApp.DataAccess.Entities.Route", null)
+                        .WithMany("Ascents")
+                        .HasForeignKey("RouteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("NewClimbingApp.DataAccess.Entities.User", null)
-                        .WithMany()
-                        .HasForeignKey("ClimbersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("Ascents")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Route", b =>
                 {
-                    b.HasOne("NewClimbingApp.DataAccess.Entities.Ascent", "Ascent")
-                        .WithMany("Routes")
-                        .HasForeignKey("AscentId");
-
                     b.HasOne("NewClimbingApp.DataAccess.Entities.Crag", null)
                         .WithMany("Routes")
                         .HasForeignKey("CragId");
-
-                    b.Navigation("Ascent");
                 });
 
             modelBuilder.Entity("RouteUser", b =>
@@ -238,14 +226,19 @@ namespace NewClimbingApp.DataAccess.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Ascent", b =>
+            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Crag", b =>
                 {
                     b.Navigation("Routes");
                 });
 
-            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Crag", b =>
+            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.Route", b =>
                 {
-                    b.Navigation("Routes");
+                    b.Navigation("Ascents");
+                });
+
+            modelBuilder.Entity("NewClimbingApp.DataAccess.Entities.User", b =>
+                {
+                    b.Navigation("Ascents");
                 });
 #pragma warning restore 612, 618
         }

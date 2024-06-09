@@ -14,8 +14,8 @@ public class UpdateUserRequestValidator : AbstractValidator<UpdateUserRequest>
     public UpdateUserRequestValidator(NewClimbingAppContext dbContext)
     {
         this.RuleFor(x => x.UserName).NotEmpty()
-           .MaximumLength(25);
-        this.RuleFor(x => x.LastName).NotEmpty()
+            .MaximumLength(25);
+        this.RuleFor(x => x.FirstName).NotEmpty()
             .MaximumLength(25);
         this.RuleFor(x => x.LastName).NotEmpty()
             .MaximumLength(25);
@@ -23,7 +23,7 @@ public class UpdateUserRequestValidator : AbstractValidator<UpdateUserRequest>
         this.RuleFor(x => x.Email).NotEmpty()
             .MaximumLength(50)
             .EmailAddress();            
-            this.RuleFor(x => x.Password).NotEmpty()
+        this.RuleFor(x => x.Password).NotEmpty()
             .MinimumLength(8);           
     }
 }

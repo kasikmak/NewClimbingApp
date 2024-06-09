@@ -34,7 +34,7 @@ public class AddCragHandler : IRequestHandler<AddCragRequest, AddCragResponse>
     {
         var query = new GetCragQuery()
         {
-            Name = request.Name
+            Name = request.Name.ToLower()
             
         };
         var crag = await this.queryExecutor.Execute(query);
@@ -45,7 +45,6 @@ public class AddCragHandler : IRequestHandler<AddCragRequest, AddCragResponse>
                 Error = new ErrorModel(ErrorType.Conflict)
             };
         }
-
         var cragToAdd = mapper.Map<Crag>(request);
         var command = new AddCragCommand 
         {

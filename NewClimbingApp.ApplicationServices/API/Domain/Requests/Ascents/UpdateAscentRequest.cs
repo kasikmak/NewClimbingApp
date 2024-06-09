@@ -16,5 +16,6 @@ public class UpdateAscentRequest : RequestBase, IRequest<UpdateAscentResponse>
     public string Notes { get; set; }
     public AscentStyle Style { get; set; }
     public float Rating { get; set; }
-    public List<string> Routes { get; set; }
+    public int RouteId { get; set; }
+    public int? ClimberId { get; set; }
 }

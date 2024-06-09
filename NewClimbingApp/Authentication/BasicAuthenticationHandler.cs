@@ -56,12 +56,13 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
 
         User user = null;
         try
-        {
+      {
             var authHeader = AuthenticationHeaderValue.Parse(Request.Headers["Authorization"]);
             var credentialBytes = Convert.FromBase64String(authHeader.Parameter);
             var credentials = Encoding.UTF8.GetString(credentialBytes).Split(new[] { ':' }, 2);
             var username = credentials[0];
             var password = credentials[1];
+          //  var hashedPassword = passwordHasher.HashPassword(password);
             var query = new GetUserQuery()
             {
                 UserName = username

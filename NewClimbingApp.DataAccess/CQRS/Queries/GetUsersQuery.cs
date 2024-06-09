@@ -16,6 +16,7 @@ public class GetUsersQuery : QueryBase<List<User>>
             .OrderBy (x => x.UserName)
             .ThenBy (x => x.Role)
             .Include(x => x.Routes)
+            .Include(x => x.Ascents)
             .AsNoTracking()
             .ToListAsync();
     }

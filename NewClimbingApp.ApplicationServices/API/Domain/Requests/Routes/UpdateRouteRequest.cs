@@ -16,9 +16,9 @@ public class UpdateRouteRequest : RequestBase, IRequest<UpdateRouteResponse>
     public string Name { get; set; }
     public string Grade { get; set; }
     public int? Length { get; set; }
+    public bool IsClimbed { get; set; }
     public RouteType Type { get; set; }
     public int? CragId { get; set; }
     public int? AscentId { get; set; }
-    [JsonIgnore]
-    public float GradeAsFloat { get; set; }
+    
 }

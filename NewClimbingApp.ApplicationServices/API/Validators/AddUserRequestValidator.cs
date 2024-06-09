@@ -14,9 +14,17 @@ public class AddUserRequestValidator : AbstractValidator<AddUserRequest>
 {
     public AddUserRequestValidator(NewClimbingAppContext dbContext)
     {
-        this.RuleFor(x=>x.UserName).NotEmpty()
-            .MaximumLength(25);
-        this.RuleFor(x=>x.LastName).NotEmpty()
+        this.RuleFor(x => x.UserName).NotEmpty()
+            .MaximumLength(25)
+            .Custom((value, context) =>
+            {
+                var userNamelInUse = dbContext.Users.Any(x => x.UserName == value);
+                if (userNamelInUse)
+                {
+                    context.AddFailure("UserName", "UserName already in use");
+                }
+            });
+        this.RuleFor(x=>x.FirstName).NotEmpty()
             .MaximumLength(25);
         this.RuleFor(x=>x.LastName).NotEmpty()
             .MaximumLength(25);

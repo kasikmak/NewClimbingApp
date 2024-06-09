@@ -16,7 +16,6 @@ public class AddRouteRequestValidator : AbstractValidator<AddRouteRequest>
         this.RuleFor(x => x.Name).NotEmpty()
             .MaximumLength(100);
         this.RuleFor(x => x.Grade).NotEmpty()
-            .MaximumLength(5);
-       // this.RuleFor(x => x.GradeAsFloat).InclusiveBetween(4F, 9.3F);
+            .MaximumLength(5);   
     }
 }

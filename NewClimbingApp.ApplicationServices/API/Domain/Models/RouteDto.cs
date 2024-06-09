@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewClimbingApp.DataAccess.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,9 +15,13 @@ public class RouteDto
     public string Name { get; set; }
     public string Grade { get; set; }
     [JsonIgnore]
-    public float GradeAsFloat { get; set; }
+    public float GradeAsFloat { get; set; }  
     public int Length { get; set; }
     public bool IsClimbed { get; set; }
     public RouteType Type { get; set; }
     public int? AscentId { get; set; }
+
+    public List<string>? Climbers {  get; set; }
+    public List<string> AscentsNotes { get; set; }
+    public float AverageRating { get; set; }
 }

@@ -10,16 +10,16 @@ namespace NewClimbingApp.DataAccess.CQRS.Queries;
 
 public class GetCragQuery : QueryBase<Crag>
 {
-    public int Id { get; set; }
+    public int? Id { get; set; }
 
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     public override async Task<Crag> Execute(NewClimbingAppContext context)
     {
 
         if (!string.IsNullOrEmpty(this.Name))
         {
-            return await context.Crags.FirstOrDefaultAsync(x => x.Name == this.Name);
+            return await context.Crags.FirstOrDefaultAsync(x => x.Name.ToLower() == this.Name.ToLower());
         }        
         if (this.Id != null)
         {

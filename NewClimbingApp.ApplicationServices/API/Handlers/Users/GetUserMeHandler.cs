@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using MediatR;
-using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 using NewClimbingApp.DataAccess.CQRS.Queries;
 using NewClimbingApp.DataAccess.CQRS;
 using NewClimbingApp.DataAccess.Entities;
@@ -11,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NewClimbingApp.ApplicationServices.API.Domain.Responses.Users;
 using NewClimbingApp.ApplicationServices.API.Domain.Models;
+using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 
 namespace NewClimbingApp.ApplicationServices.API.Domain.Requests.Users;
 public class GetUserMeHandler : IRequestHandler<GetUserMeRequest, GetUserMeResponse>

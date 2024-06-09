@@ -15,8 +15,11 @@ public class AddAscentCommand : CommandBase<Ascent, Ascent>
 
     public int Rating { get; set; }
 
+    public int ClimberId { get; set; }
+
     public override async Task<Ascent> Execute(NewClimbingAppContext context)
     {
+        Parameter.ClimberId = ClimberId;
         Parameter.IsClimbed = true;
         context.Ascents.Add(Parameter);
         await context.SaveChangesAsync();

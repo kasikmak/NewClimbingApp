@@ -10,7 +10,7 @@ namespace NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 public static class ErrorType
 {
     public const string InternalServerError = "INTERNAL_SERVER_ERROR";
-    
+
     public const string Forbidden = "FORBIDDEN";
 
     public const string ValidationError = "VALIDATON_ERROR";

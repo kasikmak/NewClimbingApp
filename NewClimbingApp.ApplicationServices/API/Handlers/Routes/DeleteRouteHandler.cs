@@ -29,6 +29,13 @@ public class DeleteRouteHandler : IRequestHandler<DeleteRouteRequest, DeleteRout
     }
     public async Task<DeleteRouteResponse> Handle(DeleteRouteRequest request, CancellationToken cancellationToken)
     {
+        if (request.AuthenticationRole == "Guest" || request.AuthenticationRole == "Climber")
+        {
+            return new DeleteRouteResponse
+            {
+                Error = new ErrorModel(ErrorType.Forbidden)
+            };
+        }
         var query = new GetRouteQuery { Id = request.Id };
         var routeToDelete = await queryExecutor.Execute(query);
         if(routeToDelete == null) 

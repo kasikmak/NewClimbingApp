@@ -14,7 +14,7 @@ public class NewClimbingAppContextFactory : IDesignTimeDbContextFactory<NewClimb
     public NewClimbingAppContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<NewClimbingAppContext>();
-        optionsBuilder.UseSqlServer("Data Source=DESKTOP-KSU5O1R\\SQLEXPRESS;Initial Catalog=NewClimbingApp;Integrated Security=True;Trust Server Certificate=True");
+        optionsBuilder.UseSqlServer("Data Source=DESKTOP-KSU5O1R\\SQLEXPRESS;Initial Catalog=ClimbingApp;Integrated Security=True;Trust Server Certificate=True");
         return new NewClimbingAppContext(optionsBuilder.Options);
     }
 }

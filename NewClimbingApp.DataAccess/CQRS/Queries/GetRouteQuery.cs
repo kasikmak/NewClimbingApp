@@ -11,10 +11,27 @@ namespace NewClimbingApp.DataAccess.CQRS.Queries;
 public class GetRouteQuery : QueryBase<Route>
 {
     public int Id { get; set; }
+
+    public string Name { get; set; }
         
     public override async Task<Route> Execute(NewClimbingAppContext context)
-    {        
-        var route = await context.Routes.FirstOrDefaultAsync(x => x.Id == Id);
-        return route;
+    {      
+        if(this.Id != null)
+        {
+            var route = await context.Routes
+           .Include(x => x.Climbers)
+           .Include(x => x.Ascents.Select(x => x.Rating).Average())
+           .FirstOrDefaultAsync(x => x.Id == Id);
+            return route;
+        }
+        if (!string.IsNullOrEmpty(this.Name))
+        {
+            var route = await context.Routes
+           .Include(x => x.Climbers)
+           .Include(x => x.Ascents.Select(x => x.Rating).Average())
+           .FirstOrDefaultAsync(x => x.Name == Name);
+            return route;
+        }
+        return null;
     }
 }

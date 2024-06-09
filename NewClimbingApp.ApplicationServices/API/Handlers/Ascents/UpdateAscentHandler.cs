@@ -40,6 +40,14 @@ public class UpdateAscentHandler : IRequestHandler<UpdateAscentRequest, UpdateAs
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
+        var route = await queryExecutor.Execute(query);
+        if (route == null)
+        {
+            return new UpdateAscentResponse()
+            {
+                Error = new ErrorModel(ErrorType.NotFound)
+            };
+        }
         var mappedAscent = mapper.Map<Ascent>(request);
         var command = new UpdateAscentCommand
         {

@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using MediatR;
-using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 using NewClimbingApp.ApplicationServices.API.Domain.Models;
 using NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes;
 using NewClimbingApp.ApplicationServices.API.Domain.Responses.Routes;
@@ -11,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 
 namespace NewClimbingApp.ApplicationServices.API.Handlers.Routes;
 
@@ -28,7 +28,7 @@ public class GetRoutesByGradeHandler : IRequestHandler<GetRoutesByGradeRequest, 
     public async Task<GetRoutesByGradeResponse> Handle(GetRoutesByGradeRequest request, CancellationToken cancellationToken)
     {
 
-        var query = new GetRoutesQuery { Grade = request.Grade};
+        var query = new GetRoutesQuery { Grade = request.Grade.ToUpper() };
         var routes = await this.queryExecutor.Execute(query);
         if (routes == null)
         {

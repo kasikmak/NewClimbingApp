@@ -11,11 +11,15 @@ public class AddRouteCommand : CommandBase<Route, Route>
 {
     public string Grade {  get; set; }
 
+    public float GradeAsFloat { get; set; }
+
+    public int ClimberId { get; set; }
 
     public override async Task<Route> Execute(NewClimbingAppContext context)
-    {
+    {        
         Parameter.Grade = Grade;
-        await context.Routes.AddAsync(this.Parameter);
+        Parameter.GradeAsFloat = GradeAsFloat;
+        context.Routes.Add(this.Parameter);
         await context.SaveChangesAsync();
         return this.Parameter;
     }

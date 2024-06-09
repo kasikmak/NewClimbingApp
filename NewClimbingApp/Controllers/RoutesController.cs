@@ -2,13 +2,15 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes;
+using NewClimbingApp.ApplicationServices.API.Domain.Requests.Users;
 using NewClimbingApp.ApplicationServices.API.Domain.Responses.Routes;
+using NewClimbingApp.ApplicationServices.API.Domain.Responses.Users;
 using NewClimbingApp.DataAccess;
 using NewClimbingApp.DataAccess.Entities;
 
 namespace NewClimbingApp.Controllers;
 
-//[Authorize]
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class RoutesController : ApiControllerBase
@@ -32,7 +34,7 @@ public class RoutesController : ApiControllerBase
     {
         var request = new GetRoutesByGradeRequest
         {
-            Grade = routeGrade.ToLower(),
+            Grade = routeGrade.ToUpper(),
         };        
         return HandleRequest<GetRoutesByGradeRequest, GetRoutesByGradeResponse>(request);
     }
@@ -61,12 +63,12 @@ public class RoutesController : ApiControllerBase
     }
 
     [HttpPut]
-    [Route("{routeId}/ascents/{ascentId}")]
-    public Task<IActionResult> AddAscentToRoute([FromRoute] int routeId, int ascentId, [FromBody] AddAscentToRouteRequest request)
+    [Route("{routeId}/climbers/{climberId}")]
+    public Task<IActionResult> AddRouteToUser([FromRoute] int routeId, int climberId, [FromBody] AddRouteToUserRequest request)
     {
         request.RouteId = routeId;
-        request.AscentId = ascentId;
-        return HandleRequest<AddAscentToRouteRequest, AddAscentToRouteResponse>(request);
+        request.ClimberId = climberId;
+        return HandleRequest<AddRouteToUserRequest, AddRouteToUserResponse>(request);
     }
 
     [HttpDelete]

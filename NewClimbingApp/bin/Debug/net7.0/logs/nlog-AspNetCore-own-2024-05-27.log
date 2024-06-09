@@ -1,0 +1,74 @@
+2024-05-27 23:21:25.6079|0|DEBUG|Program|init main |url: |action: 
+2024-05-27 23:21:38.4318|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: 
+2024-05-27 23:21:38.4777|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: 
+2024-05-27 23:21:38.4777|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp |url: |action: 
+2024-05-27 23:21:41.7907|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/index.html|action: 
+2024-05-27 23:21:45.8947|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/swagger/v1/swagger.json|action: 
+2024-05-27 23:27:15.9580|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Users|action: GetUsers
+2024-05-27 23:27:16.8849|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users|action: GetUsers
+2024-05-27 23:28:27.0921|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. |url: https://localhost/Users|action: GetUsers
+2024-05-27 23:29:47.6655|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:29:47.6828|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:29:53.5669|20504|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:31:37.9782|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-05-27 23:31:41.7750|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:31:41.7750|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:31:54.2569|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: GetUsers
+2024-05-27 23:31:54.2646|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/users|action: GetUsers
+2024-05-27 23:32:20.3115|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: GetUsers
+2024-05-27 23:32:20.3115|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/users|action: GetUsers
+2024-05-27 23:33:42.8377|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-05-27 23:34:42.6220|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-05-27 23:34:42.6220|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Users/me|action: 
+2024-05-27 23:34:42.6220|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:34:42.6220|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:34:56.2777|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes/7|action: GetRouteById
+2024-05-27 23:34:56.3731|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes/7|action: GetRouteById
+2024-05-27 23:34:56.4449|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:34:56.4454|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:36:14.8803|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags|action: 
+2024-05-27 23:36:14.8803|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags|action: 
+2024-05-27 23:36:14.9023|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:36:14.9023|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags|action: 
+2024-05-27 23:36:25.7838|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:36:25.7838|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/Users/me|action: GetUserMe
+2024-05-27 23:36:31.1987|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:36:31.2167|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:36:35.5638|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Crags|action: AddCrag
+2024-05-27 23:36:35.6721|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: AddCrag
+2024-05-27 23:36:35.6721|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:36:35.6830|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Crags|action: AddCrag
+2024-05-27 23:36:35.6830|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:36:35.6830|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: AddCrag
+2024-05-27 23:38:17.1223|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:38:17.1223|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:41:35.6773|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:45:51.4783|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:45:51.4783|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:45:53.1332|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:45:53.1761|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:45:53.1796|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:45:55.1084|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:45:55.1190|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:45:57.0402|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:45:57.0402|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:46:50.8918|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:46:50.8918|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:47:08.2900|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:47:11.1587|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/routes|action: AddRoute
+2024-05-27 23:47:11.1755|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/routes|action: AddRoute
+2024-05-27 23:47:22.6848|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/routes|action: 
+2024-05-27 23:47:25.0436|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:47:25.0462|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/routes|action: GetAllRoutes
+2024-05-27 23:47:40.4950|8|DEBUG|Pharmacy.Authentication.BasicAuthenticationHandler|AuthenticationScheme: BasicAuthentication was successfully authenticated. |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:47:40.4950|0|INFO|NewClimbingApp.Controllers.RoutesController|We are in Routes |url: https://localhost/Routes|action: GetAllRoutes
+2024-05-27 23:48:22.5951|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-05-27 23:48:25.5362|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/ascents|action: 
+2024-05-27 23:48:32.3986|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/users|action: 
+2024-05-27 23:48:35.0867|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/users|action: GetUsers
+2024-05-27 23:48:35.0867|0|INFO|NewClimbingApp.Controllers.UsersController|We are in Users |url: https://localhost/users|action: GetUsers
+2024-05-27 23:48:51.4428|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/Crags|action: 
+2024-05-27 23:48:54.4712|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:48:54.4712|0|INFO|NewClimbingApp.Controllers.CragsController|We are in Crags |url: https://localhost/Crags|action: GetAllCrags
+2024-05-27 23:49:07.3012|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Missing Authorization Header |url: https://localhost/ascents|action: 
+2024-05-27 23:49:09.5056|7|INFO|Pharmacy.Authentication.BasicAuthenticationHandler|BasicAuthentication was not authenticated. Failure message: Resource does not exist |url: https://localhost/ascents|action: 

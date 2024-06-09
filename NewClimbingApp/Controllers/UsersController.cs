@@ -55,6 +55,15 @@ namespace NewClimbingApp.Controllers
             return this.HandleRequest<UpdateUserRequest, UpdateUserResponse>(request);
         }
 
+        [HttpPut]
+        [Route("{climberId}/routes/{routeId}")]
+        public Task<IActionResult> AddRouteToUser([FromRoute] int routeId, int climberId, [FromBody] AddRouteToUserRequest request)
+        {
+            request.RouteId = routeId;
+            request.ClimberId = climberId;
+            return HandleRequest<AddRouteToUserRequest, AddRouteToUserResponse>(request);
+        }
+
         [HttpDelete]
         [Route("{userId}")]
         public Task<IActionResult> DeleteUser([FromRoute] int userId)

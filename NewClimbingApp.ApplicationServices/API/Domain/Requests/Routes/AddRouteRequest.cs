@@ -21,9 +21,6 @@ namespace NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes
         public int? CragId { get; set; }
         public RouteType Type { get; set; }
         public int? AscentId { get; set; }
-        [JsonIgnore]
-        public float GradeAsFloat {  get; set; }
-               
-        //public Ascent Ascent { get; set; }
+        public int? ClimberId {  get; set; }
     }
 }

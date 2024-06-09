@@ -22,6 +22,7 @@ public class UsersProfile : Profile
             .ForMember(x => x.LastName, y => y.MapFrom(y => y.LastName))
             .ForMember(x => x.Nationality, y => y.MapFrom(y => y.Nationality))
             .ForMember(x => x.Password, y => y.MapFrom( z=> z.PasswordHash))
+            .ForMember(x => x.Ascents, y => y.MapFrom(y => y.Ascents != null ? y.Ascents.Select(z => z.Notes) : new List<string>()))
             .ForMember(x => x.Routes, y => y.MapFrom(y => y.Routes != null ? y.Routes.Select(z => z.Name) : new List<string>()))
             .ForMember(x => x.Role, y => y.MapFrom(y => y.Role));
 
@@ -30,7 +31,7 @@ public class UsersProfile : Profile
             .ForMember(x => x.FirstName, y => y.MapFrom(y => y.FirstName))
             .ForMember(x => x.LastName, y => y.MapFrom(y => y.FirstName))
             .ForMember(x => x.Nationality, y => y.MapFrom(y => y.Nationality))
-            .ForMember(x => x.Role, y => y.MapFrom(y => y.Role))
+            .ForMember(x => x.Role, y => y.MapFrom(y => y.Role))            
             .ForMember(x => x.PasswordHash, y => y.MapFrom(z => z.Password));
 
         this.CreateMap<UpdateUserRequest, User>()
@@ -40,5 +41,8 @@ public class UsersProfile : Profile
            .ForMember(x => x.LastName, y => y.MapFrom(y => y.LastName))
            .ForMember(x => x.Nationality, y => y.MapFrom(y => y.Nationality))
            .ForMember(x => x.PasswordHash, y => y.MapFrom(z => z.Password));
+
+        this.CreateMap<DeleteUserRequest, User>()
+          .ForMember(x => x.Id, y => y.MapFrom(y => y.Id));
     }
 }
