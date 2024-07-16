@@ -8,6 +8,7 @@ using NewClimbingApp.ApplicationServices.API.Domain.Responses.Users;
 using NewClimbingApp.DataAccess.CQRS;
 using NewClimbingApp.DataAccess.CQRS.Commands;
 using NewClimbingApp.DataAccess.CQRS.Queries;
+using NewClimbingApp.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,22 +33,24 @@ public class DeleteUserHandler : IRequestHandler<DeleteUserRequest, DeleteUserRe
     public async Task<DeleteUserResponse> Handle(DeleteUserRequest request, CancellationToken cancellationToken)
     {
         var query = new GetUserQuery { UserId = request.Id };
-        var userToDelete = await queryExecutor.Execute(query);
-        if (userToDelete == null)
+        var userFromDb = await queryExecutor.Execute(query);
+        if (userFromDb == null)
         {
             new DeleteUserResponse
             {
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
+        var userToDelete = this.mapper.Map<User>(userFromDb);
         var command = new DeleteUserCommand
         {  
             Parameter = userToDelete
         };
         var deletedUser = await commandExecutor.Execute(command);
-        return new DeleteUserResponse
+        var response = new DeleteUserResponse
         {
-            Data = mapper.Map<UserDto>(deletedUser)
+            Data = deletedUser
         };
+        return response;
     }
 }

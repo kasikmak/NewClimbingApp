@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.ApplicationServices.API.Domain.Responses.Ascents;
 
-public class DeleteAscentResponse : ResponseBase<AscentDto>
+public class DeleteAscentResponse : ResponseBase<bool>
 {
 }

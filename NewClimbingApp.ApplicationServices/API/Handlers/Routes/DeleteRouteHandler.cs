@@ -7,6 +7,7 @@ using NewClimbingApp.ApplicationServices.API.Domain.Responses.Routes;
 using NewClimbingApp.DataAccess.CQRS;
 using NewClimbingApp.DataAccess.CQRS.Commands;
 using NewClimbingApp.DataAccess.CQRS.Queries;
+using NewClimbingApp.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,14 +38,15 @@ public class DeleteRouteHandler : IRequestHandler<DeleteRouteRequest, DeleteRout
             };
         }
         var query = new GetRouteQuery { Id = request.Id };
-        var routeToDelete = await queryExecutor.Execute(query);
-        if(routeToDelete == null) 
+        var routeFromDb = await queryExecutor.Execute(query);
+        if(routeFromDb == null) 
         {
             new DeleteRouteResponse
             {
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
+        var routeToDelete = this.mapper.Map<Route>(routeFromDb);
         var command = new DeleteRouteCommand
         {
             Parameter = routeToDelete
@@ -52,7 +54,7 @@ public class DeleteRouteHandler : IRequestHandler<DeleteRouteRequest, DeleteRout
         var deletedRoute = await commandExecutor.Execute(command);
         var response = new DeleteRouteResponse
         {
-            Data = mapper.Map<RouteDto>(deletedRoute)
+            Data = deletedRoute
         };
         return response;
     }

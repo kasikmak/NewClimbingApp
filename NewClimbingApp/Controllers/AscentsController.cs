@@ -15,10 +15,15 @@ public class AscentsController : ApiControllerBase
     {
         logger.LogInformation("We are in Ascents");
     }
-
+    [HttpGet]
+    [Route("")]
+    public Task<IActionResult> GetAllAscents([FromQuery] GetAllAscentsRequest request)
+    {
+        return HandleRequest<GetAllAscentsRequest, GetAllAscentsResponse>(request);
+    }
  
     [HttpGet]
-    [Route("{routeId}")]
+    [Route("route/{routeId}")]
     public Task<IActionResult> GetAscentById([FromRoute] int routeId)
     {
         var request = new GetAscentByRouteIdRequest { RouteId = routeId };

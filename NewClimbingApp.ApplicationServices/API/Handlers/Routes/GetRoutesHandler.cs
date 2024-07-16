@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using NewClimbingApp.ApplicationServices.API.Domain.Components;
 using NewClimbingApp.ApplicationServices.API.Domain.ErrorHandling;
 using NewClimbingApp.ApplicationServices.API.Domain.Models;
 using NewClimbingApp.ApplicationServices.API.Domain.Requests.Routes;
@@ -21,11 +22,13 @@ public class GetRoutesHandler : IRequestHandler<GetRoutesRequest, GetRoutesRespo
 {
     private readonly IMapper mapper;
     private readonly IQueryExecutor queryExecutor;
+    private readonly IAccuWeather accuweather;
 
-    public GetRoutesHandler(IMapper mapper, IQueryExecutor queryExecutor)
+    public GetRoutesHandler(IMapper mapper, IQueryExecutor queryExecutor, IAccuWeather accuweather)
     {        
         this.mapper = mapper;
         this.queryExecutor = queryExecutor;
+        this.accuweather = accuweather;
     }
 
     public async Task<GetRoutesResponse> Handle(GetRoutesRequest request, CancellationToken cancellationToken)

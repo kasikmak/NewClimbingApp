@@ -32,22 +32,24 @@ public class DeleteAscentHandler : IRequestHandler<DeleteAscentRequest, DeleteAs
     public async Task<DeleteAscentResponse> Handle(DeleteAscentRequest request, CancellationToken cancellationToken)
     {
         var query = new GetAscentQuery { Id = request.Id };
-        var ascentToDelete = await queryExecutor.Execute(query);
-        if (ascentToDelete == null)
+        var ascentFromDB  = await queryExecutor.Execute(query);
+        if (ascentFromDB == null)
         {
             new DeleteAscentResponse()
             {
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
-        var command = new DeleteAscentCommand
+        var ascentToDelete = mapper.Map<Ascent>(ascentFromDB);
+        var command = new DeleteAscentCommand()
         {
             Parameter = ascentToDelete
         };
         var deletedAscent = await commandExecutor.Execute(command);
-        return new DeleteAscentResponse()
+        var response = new DeleteAscentResponse()
         {
-            Data = this.mapper.Map<AscentDto>(deletedAscent)
+            Data = deletedAscent
         };
+        return response;
     }
 }

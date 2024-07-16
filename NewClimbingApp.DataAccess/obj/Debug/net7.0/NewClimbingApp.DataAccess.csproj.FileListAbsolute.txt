@@ -12,3 +12,4 @@ C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.pdb
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.genruntimeconfig.cache
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\ref\NewClimbingApp.DataAccess.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.DataAccess\obj\Debug\net7.0\NewClimbingApp.DataAccess.sourcelink.json

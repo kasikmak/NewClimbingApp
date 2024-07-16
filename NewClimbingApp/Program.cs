@@ -13,13 +13,13 @@ using NewClimbingApp.DataAccess.Entities;
 using Microsoft.AspNetCore.Authentication;
 using Pharmacy.Authentication;
 using Microsoft.AspNet.Identity;
+using NewClimbingApp.ApplicationServices.API.Domain.Components;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
@@ -41,6 +41,7 @@ builder.Services.AddAuthentication("BasicAuthentication")
     .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
 builder.Services.AddTransient<ICommandExecutor, CommandExecutor>();
 builder.Services.AddTransient<IQueryExecutor, QueryExecutor>();
+builder.Services.AddTransient<IAccuWeather, AccuWeather>();
 builder.Services.AddAutoMapper(typeof(RoutesProfile).Assembly);
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ResponseBase<>).Assembly));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));

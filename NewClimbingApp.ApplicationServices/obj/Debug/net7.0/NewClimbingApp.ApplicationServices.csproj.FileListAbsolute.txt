@@ -8,8 +8,9 @@ C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.AssemblyInfoInputs.cache
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.AssemblyInfo.cs
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.csproj.CoreCompileInputs.cache
-C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.csproj.CopyComplete
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.dll
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\refint\NewClimbingApp.ApplicationServices.dll
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.pdb
 C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\ref\NewClimbingApp.ApplicationServices.dll
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimbingApp.ApplicationServices.sourcelink.json
+C:\Users\---\Documents\GitHub\NewClimbingApp\NewClimbingApp.ApplicationServices\obj\Debug\net7.0\NewClimb.3D09D5BC.Up2Date

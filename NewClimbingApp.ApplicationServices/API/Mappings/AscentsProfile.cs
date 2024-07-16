@@ -37,7 +37,7 @@ public class AscentsProfile : Profile
            .ForMember(x => x.RouteId, y => y.MapFrom(z => z.RouteId))
            .ForMember(x => x.Notes, y => y.MapFrom(z => z.Notes));
 
-       this.CreateMap<DeleteAscentRequest, AscentDto>()
+       this.CreateMap<DeleteAscentRequest, Ascent>()
            .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
     }
 }

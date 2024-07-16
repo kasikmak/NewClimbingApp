@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.ApplicationServices.API.Domain.Responses.Routes;
 
-public class DeleteRouteResponse : ResponseBase<RouteDto>
+public class DeleteRouteResponse : ResponseBase<bool>
 {
 }

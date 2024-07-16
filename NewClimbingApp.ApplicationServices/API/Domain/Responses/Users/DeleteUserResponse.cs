@@ -8,6 +8,6 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.ApplicationServices.API.Domain.Responses.Users;
 
-public class DeleteUserResponse :ResponseBase<UserDto>
+public class DeleteUserResponse :ResponseBase<bool>
 {
 }

@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.DataAccess.CQRS.Commands;
 
-public class DeleteRouteCommand : CommandBase<Route, Route>
+public class DeleteRouteCommand : CommandBase<Route, bool>
 {
-    public override async Task<Route> Execute(NewClimbingAppContext context)
+    public override async Task<bool> Execute(NewClimbingAppContext context)
     {
+        context.ChangeTracker.Clear();
         context.Routes.Remove(this.Parameter);
         await context.SaveChangesAsync();
-        return this.Parameter;
+        return true;
     }
 }

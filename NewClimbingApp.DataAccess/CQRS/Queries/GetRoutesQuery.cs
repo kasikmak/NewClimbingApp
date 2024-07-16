@@ -33,7 +33,7 @@ public class GetRoutesQuery : QueryBase<List<Route>>
 
         return await context.Routes          
             .Include(x => x.Climbers)
-            .Include(x => x.Ascents)
+            .Include(x => x.Ascents)            
             .OrderBy(x => x.GradeAsFloat)
             .ThenBy(x => x.Ascents.Select(x => x.Rating).Average())
             .ThenBy(x => x.Name)

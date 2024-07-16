@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp\\newclimbingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|solutionrelative:newclimbingapp\\newclimbingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.dataaccess\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|solutionrelative:newclimbingapp.dataaccess\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.dataaccess\\entities\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|solutionrelative:newclimbingapp.dataaccess\\entities\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.dataaccess\\entities\\crag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|solutionrelative:newclimbingapp.dataaccess\\entities\\crag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.dataaccess\\entities\\ascent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|solutionrelative:newclimbingapp.dataaccess\\entities\\ascent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp\\authentication\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|solutionrelative:newclimbingapp\\authentication\\basicauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.dataaccess\\cqrs\\queries\\getroutequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3081CE69-7566-4DA7-8B1C-919E154B284F}|NewClimbingApp.DataAccess\\NewClimbingApp.DataAccess.csproj|solutionrelative:newclimbingapp.dataaccess\\cqrs\\queries\\getroutequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.applicationservices\\api\\handlers\\routes\\addroutehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|solutionrelative:newclimbingapp.applicationservices\\api\\handlers\\routes\\addroutehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.applicationservices\\api\\handlers\\users\\addroutetouserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|solutionrelative:newclimbingapp.applicationservices\\api\\handlers\\users\\addroutetouserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp.applicationservices\\api\\handlers\\crags\\addroutetocraghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11D9A579-E383-4327-BF06-0A6C967359B8}|NewClimbingApp.ApplicationServices\\NewClimbingApp.ApplicationServices.csproj|solutionrelative:newclimbingapp.applicationservices\\api\\handlers\\crags\\addroutetocraghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|solutionrelative:newclimbingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|c:\\users\\---\\documents\\github\\newclimbingapp\\newclimbingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60C7CA01-AF87-4179-8878-489C4BD73B2D}|NewClimbingApp\\NewClimbingApp.csproj|solutionrelative:newclimbingapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "NewClimbingApp.DataAccess\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\User.cs",
-              "RelativeToolTip": "NewClimbingApp.DataAccess\\Entities\\User.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAwwBoAAAAYAAAA",
+              "DocumentIndex": 3,
+              "Title": "AddRouteToCragHandler.cs",
+              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Crags\\AddRouteToCragHandler.cs",
+              "RelativeDocumentMoniker": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Crags\\AddRouteToCragHandler.cs",
+              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Crags\\AddRouteToCragHandler.cs",
+              "RelativeToolTip": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Crags\\AddRouteToCragHandler.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwDkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:44.001Z",
+              "WhenOpened": "2024-06-26T16:39:23.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Route.cs",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Route.cs",
-              "RelativeDocumentMoniker": "NewClimbingApp.DataAccess\\Entities\\Route.cs",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Route.cs",
-              "RelativeToolTip": "NewClimbingApp.DataAccess\\Entities\\Route.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Title": "AddRouteToUserHandler.cs",
+              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Users\\AddRouteToUserHandler.cs",
+              "RelativeDocumentMoniker": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Users\\AddRouteToUserHandler.cs",
+              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Users\\AddRouteToUserHandler.cs",
+              "RelativeToolTip": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Users\\AddRouteToUserHandler.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwB8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:45.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Crag.cs",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Crag.cs",
-              "RelativeDocumentMoniker": "NewClimbingApp.DataAccess\\Entities\\Crag.cs",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Crag.cs",
-              "RelativeToolTip": "NewClimbingApp.DataAccess\\Entities\\Crag.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:45.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ascent.cs",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Ascent.cs",
-              "RelativeDocumentMoniker": "NewClimbingApp.DataAccess\\Entities\\Ascent.cs",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\Entities\\Ascent.cs",
-              "RelativeToolTip": "NewClimbingApp.DataAccess\\Entities\\Ascent.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:45.114Z"
+              "WhenOpened": "2024-06-26T16:39:30.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NewClimbingApp.csproj",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\NewClimbingApp.csproj",
-              "RelativeDocumentMoniker": "NewClimbingApp\\NewClimbingApp.csproj",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\NewClimbingApp.csproj",
-              "RelativeToolTip": "NewClimbingApp\\NewClimbingApp.csproj",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-08T12:23:45.24Z",
+              "Title": "BasicAuthenticationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\Authentication\\BasicAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "NewClimbingApp\\Authentication\\BasicAuthenticationHandler.cs",
+              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\Authentication\\BasicAuthenticationHandler.cs",
+              "RelativeToolTip": "NewClimbingApp\\Authentication\\BasicAuthenticationHandler.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAwwDUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T16:39:30.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\appsettings.json",
+              "RelativeDocumentMoniker": "NewClimbingApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\appsettings.json",
+              "RelativeToolTip": "NewClimbingApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T16:16:54.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GetRouteQuery.cs",
               "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\CQRS\\Queries\\GetRouteQuery.cs",
               "RelativeDocumentMoniker": "NewClimbingApp.DataAccess\\CQRS\\Queries\\GetRouteQuery.cs",
               "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.DataAccess\\CQRS\\Queries\\GetRouteQuery.cs",
               "RelativeToolTip": "NewClimbingApp.DataAccess\\CQRS\\Queries\\GetRouteQuery.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvxkAAAAJAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwBIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:46.093Z"
+              "WhenOpened": "2024-06-19T22:19:07.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddRouteHandler.cs",
-              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Routes\\AddRouteHandler.cs",
-              "RelativeDocumentMoniker": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Routes\\AddRouteHandler.cs",
-              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp.ApplicationServices\\API\\Handlers\\Routes\\AddRouteHandler.cs",
-              "RelativeToolTip": "NewClimbingApp.ApplicationServices\\API\\Handlers\\Routes\\AddRouteHandler.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAABoAAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\Program.cs",
+              "RelativeDocumentMoniker": "NewClimbingApp\\Program.cs",
+              "ToolTip": "C:\\Users\\---\\Documents\\GitHub\\NewClimbingApp\\NewClimbingApp\\Program.cs",
+              "RelativeToolTip": "NewClimbingApp\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T12:23:46.093Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-06-10T17:32:30.801Z",
+              "EditorCaption": ""
             }
           ]
         }

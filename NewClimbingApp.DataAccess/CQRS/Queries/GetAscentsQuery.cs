@@ -16,14 +16,14 @@ namespace NewClimbingApp.DataAccess.CQRS.Queries
 
         public  override Task<List<Ascent>> Execute(NewClimbingAppContext context)
         {
-            if (this.Rating != null)
+            if (this.Rating != 0)
             {
                 return context.Ascents
                     .Where(x => x.Rating >= this.Rating)
                     .OrderBy(x => x.RouteId)
                     .ToListAsync();
             }
-            if (this.RouteId != null) 
+            if (this.RouteId != 0) 
             {
                 return context.Ascents
                     .Where(x => x.RouteId == this.RouteId)
@@ -32,6 +32,7 @@ namespace NewClimbingApp.DataAccess.CQRS.Queries
             }           
             return context.Ascents
                 .OrderBy(x => x.Rating)
+                .ThenBy(x => x.RouteId)
                 .ToListAsync();        
         }
     }

@@ -39,22 +39,24 @@ public class DeleteCragHandler : IRequestHandler<DeleteCragRequest, DeleteCragRe
             };
         }
         var query = new GetCragQuery { Id = request.Id };
-        var cragToDelete = await queryExecutor.Execute(query);
-        if (cragToDelete != null)
+        var cragFromDb = await queryExecutor.Execute(query);
+        if (cragFromDb != null)
         {
             new DeleteCragResponse()
             {
                 Error = new ErrorModel(ErrorType.NotFound)
             };
         }
+        var cragToDelete = this.mapper.Map<Crag>(cragFromDb);
         var command = new DeleteCragCommand
         {
             Parameter = cragToDelete
         };
         var deletedCrag = await commandExecutor.Execute(command);
-        return new DeleteCragResponse()
+        var response = new DeleteCragResponse()
         {
-            Data = this.mapper.Map<CragDto>(deletedCrag)
+            Data = deletedCrag
         };
+        return response;
     }
 }

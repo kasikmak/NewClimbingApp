@@ -16,9 +16,6 @@ public class AddAscentRequest : RequestBase, IRequest<AddAscentResponse>
     public bool IsClimbed { get; set; }
     public string Notes { get; set; }
     public float Rating { get; set; }
-    public AscentStyle Style { get; set; }
-
-   // public int ClimberId { get; set; }
-     
+    public AscentStyle Style { get; set; }     
     public int RouteId { get; set; }  
 }

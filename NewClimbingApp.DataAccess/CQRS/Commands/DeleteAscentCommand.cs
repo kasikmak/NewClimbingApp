@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.DataAccess.CQRS.Commands;
 
-public class DeleteAscentCommand : CommandBase<Ascent, Ascent>
+public class DeleteAscentCommand : CommandBase<Ascent, bool>
 {
-    public override async Task<Ascent> Execute(NewClimbingAppContext context)
+    public override async Task<bool> Execute(NewClimbingAppContext context)
     {
-        context.Ascents.Remove(Parameter);
+        context.ChangeTracker.Clear();
+        context.Ascents.Remove(this.Parameter);
         await context.SaveChangesAsync();
-        return this.Parameter;
+        return true;
     }
 }

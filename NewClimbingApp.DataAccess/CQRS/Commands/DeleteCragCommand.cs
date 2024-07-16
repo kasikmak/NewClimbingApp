@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.DataAccess.CQRS.Commands;
 
-public class DeleteCragCommand : CommandBase<Crag, Crag>
+public class DeleteCragCommand : CommandBase<Crag, bool>
 {
-    public override async Task<Crag> Execute(NewClimbingAppContext context)
+    public override async Task<bool> Execute(NewClimbingAppContext context)
     {
+        context.ChangeTracker.Clear();
         context.Crags.Remove(Parameter);
         await context.SaveChangesAsync();
-        return this.Parameter;
+        return true;
     }
 }

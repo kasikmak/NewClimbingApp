@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 
 namespace NewClimbingApp.ApplicationServices.API.Domain.Responses.Crags;
 
-public class DeleteCragResponse : ResponseBase<CragDto>
+public class DeleteCragResponse : ResponseBase<bool>
 {
 }

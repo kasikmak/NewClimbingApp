@@ -22,9 +22,6 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
     private readonly IQueryExecutor queryExecutor;
     private readonly IPasswordHasher passwordHasher;
 
-    //private readonly IPasswordHasher<User> passwordHasher;
-
-
     public BasicAuthenticationHandler(
             IOptionsMonitor<AuthenticationSchemeOptions> options,
             ILoggerFactory logger,
@@ -32,17 +29,14 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
             ISystemClock clock,
             IQueryExecutor queryExecutor,
             IPasswordHasher passwordHasher)
-          //  IPasswordHasher<User> passwordHasher)
             : base(options, logger, encoder, clock)
     {
         this.queryExecutor = queryExecutor;
         this.passwordHasher = passwordHasher;
-        // this.passwordHasher = passwordHasher;
     }
 
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
     {
-        // skip authentication if endpoint has [AllowAnonymous] attribute
         var endpoint = Context.GetEndpoint();
         if (endpoint?.Metadata?.GetMetadata<IAllowAnonymous>() != null)
         {
@@ -62,7 +56,6 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
             var credentials = Encoding.UTF8.GetString(credentialBytes).Split(new[] { ':' }, 2);
             var username = credentials[0];
             var password = credentials[1];
-          //  var hashedPassword = passwordHasher.HashPassword(password);
             var query = new GetUserQuery()
             {
                 UserName = username
@@ -74,12 +67,7 @@ public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSc
                 return AuthenticateResult.Fail("Resource does not exist");
             }
 
-            passwordHasher.VerifyHashedPassword(user.PasswordHash, password);
-            /*  var result = passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
-              if (result == PasswordVerificationResult.Failed)
-              {
-                  return AuthenticateResult.Fail("Wrong password");
-              }*/
+            passwordHasher.VerifyHashedPassword(user.PasswordHash, password);        
             if (user == null || password != user.PasswordHash)
             {
                 return AuthenticateResult.Fail("Invalid Authorization Header");

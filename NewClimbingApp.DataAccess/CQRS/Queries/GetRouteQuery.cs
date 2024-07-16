@@ -16,11 +16,11 @@ public class GetRouteQuery : QueryBase<Route>
         
     public override async Task<Route> Execute(NewClimbingAppContext context)
     {      
-        if(this.Id != null)
+        if(this.Id != 0)
         {
             var route = await context.Routes
            .Include(x => x.Climbers)
-           .Include(x => x.Ascents.Select(x => x.Rating).Average())
+          // .Include(x => x.Ascents.Select(x => x.Rating))
            .FirstOrDefaultAsync(x => x.Id == Id);
             return route;
         }
@@ -28,7 +28,7 @@ public class GetRouteQuery : QueryBase<Route>
         {
             var route = await context.Routes
            .Include(x => x.Climbers)
-           .Include(x => x.Ascents.Select(x => x.Rating).Average())
+          // .Include(x => x.Ascents.Select(x => x.Rating).Average())
            .FirstOrDefaultAsync(x => x.Name == Name);
             return route;
         }

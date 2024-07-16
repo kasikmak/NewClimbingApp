@@ -32,28 +32,7 @@ public class AddRouteHandler : IRequestHandler<AddRouteRequest, AddRouteResponse
 
     public async Task<AddRouteResponse> Handle(AddRouteRequest request, CancellationToken cancellationToken)
     {
-        if (request.ClimberId != null)
-        {
-            var query = new GetUserQuery { UserId = request.ClimberId };
-            var climber = await queryExecutor.Execute(query);
-            var route = this.mapper.Map<Route>(request);
-            var gradeAsFloat = route.Grade.ToUpper().ConvertGrades();
-            route.Climbers.Add(climber);
-            var command = new AddRouteCommand
-            {
-                Grade = route.Grade.ToUpper(),
-                GradeAsFloat = gradeAsFloat,
-                Parameter = route,
-
-            };
-            var routeFromDB = await this.commandExecutor.Execute(command);
-            return new AddRouteResponse
-            {
-                Data = mapper.Map<RouteDto>(routeFromDB)
-            };
-        }
-        else
-        {
+        
             var route = this.mapper.Map<Route>(request);
             var gradeAsFloat = route.Grade.ToUpper().ConvertGrades();
             var command = new AddRouteCommand
@@ -67,6 +46,6 @@ public class AddRouteHandler : IRequestHandler<AddRouteRequest, AddRouteResponse
             {
                 Data = mapper.Map<RouteDto>(routeFromDB)
             };
-        }
+        
     }   
 }
