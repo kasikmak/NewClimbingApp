@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewClimbingApp.ApplicationServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10b0c9a48104fe41dcdfe7aefbfc36ddc4730de7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d29ef37c94540482973ca724b152a76c0b542c92")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewClimbingApp.ApplicationServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewClimbingApp.ApplicationServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
